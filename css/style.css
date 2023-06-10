@@ -1,40 +1,46 @@
 *,
 *::before,
-*::after{
+*::after {
     padding: 0;
     margin: 0;
 }
 
-body{
+body {
     background-color: #F5F6F6;
     font-family: "Montserrat";
     color: #3D3D3D;
 }
 
-a{
+a {
     text-decoration: none;
     transition: 0.15s ease-in-out;
 }
 
-ul, ol, li{
+ul,
+ol,
+li {
     list-style-type: none;
 }
 
-.wrapper{
+.wrapper {
     display: flex;
     flex-direction: column;
     height: 100%;
     overflow: hidden;
 }
 
-.container{
+.container {
     max-width: 1600px;
     margin: 0 auto;
 }
 
+.hidden {
+    display: none;
+}
+
 /* кнопки */
 
-.primary_btn{
+.primary_btn {
     background: #5617D2;
     color: #fff;
     padding: 15px 35px;
@@ -43,32 +49,48 @@ ul, ol, li{
     width: fit-content;
 }
 
-.primary_btn:hover{
+.primary_btn:hover {
+    background: #292929;
+}
+
+.secondary_btn {
+    display: block;
+    padding: 10px 28px;
+    border: 1px solid #fff;
+    border-radius: 25px;
+    color: #fff;
+    width: fit-content;
+}
+
+.secondary_btn:hover {
     background: #292929;
 }
 
 /* шапка */
 
-header.element_pad{
+header.element_pad {
     padding: 20px 35px;
 }
 
-.header__row{
+.header__row {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    font-weight: 500;
 }
 
-header .logo, .user__nav__list, .lk__nav{
+header .logo,
+.user__nav__list,
+.lk__nav {
     display: flex;
     align-items: center;
 }
 
-header .logo p{
+header .logo p {
     margin-left: 10px;
 }
 
-header .logo p .strong{
+header .logo p .strong {
     font-weight: 700;
 }
 
@@ -81,7 +103,7 @@ header a {
     color: inherit;
 }
 
-.icon_btn{
+.icon_btn {
     padding: 12px 20px;
     border: 1px solid #5617D2;
     border-radius: 25px;
@@ -96,26 +118,27 @@ header a {
     color: #5617D2;
 }
 
-.icon_btn:hover{
+.icon_btn:hover {
     background: #5617D2;
     color: #fff;
 }
 
-.icon_btn:hover i{
+.icon_btn:hover i {
     color: #fff;
 }
 
-.user__navigation a:hover, .lk__nav a:not(.icon_btn):hover{
+.user__navigation a:hover,
+.lk__nav a:not(.icon_btn):hover {
     color: #5617D2;
 }
 
 /* стартовый экран после шапки на главной странице */
 
-.element_pad{
+.element_pad {
     padding: 0 35px;
 }
 
-.badge{
+.badge {
     padding: 6px 25px;
     border-radius: 25px;
     background: #E7E9EC;
@@ -124,11 +147,11 @@ header a {
     font-weight: 600;
 }
 
-.purple{
+.purple {
     color: #5617D2;
 }
 
-.promo_heading{
+.promo_heading {
     font-weight: 800;
     font-size: 80px;
     margin-top: 25px;
@@ -143,27 +166,28 @@ header a {
     letter-spacing: -0.48px;
 }
 
-.promo_row{
+.promo_row {
     display: flex;
     background: #fff;
     align-items: center;
     border-radius: 20px;
 }
 
-.promo_col{
+.promo_col {
     flex: 0 0 50%;
     max-width: 50%;
 }
 
-.promo{
+.promo {
     position: relative;
+    margin-top: 15px;
 }
 
-.promo_col_info_ctn{
+.promo_col_info_ctn {
     padding-left: 110px;
 }
 
-.promo_bg{
+.promo_bg {
     position: relative;
     height: 922px;
     display: flex;
@@ -172,6 +196,7 @@ header a {
     width: 100%;
 }
 
+/* книжкая слева */
 .promo_bg .promo_bg_ctn:first-of-type {
     position: absolute;
     top: 0;
@@ -182,10 +207,10 @@ header a {
     z-index: 7;
     animation-name: AuxFadeInDown2;
     animation-duration: 2s;
-    /* animation-delay: .65s; */
-    animation-timing-function: cubic-bezier(.165,.84,.44,1);
+    animation-timing-function: cubic-bezier(.165, .84, .44, 1);
 }
 
+/* книжка справа */
 .promo_bg .promo_bg_ctn:nth-child(2) {
     position: absolute;
     width: auto;
@@ -195,9 +220,10 @@ header a {
     animation-name: TransformTop;
     animation-duration: 2s;
     animation-fill-mode: both;
-    animation-timing-function: cubic-bezier(.25,.46,.45,.94);
+    animation-timing-function: cubic-bezier(.25, .46, .45, .94);
 }
 
+/* оранжевая линия */
 .promo_bg .promo_bg_ctn:nth-child(3) {
     position: absolute;
     width: auto;
@@ -213,6 +239,7 @@ header a {
     animation-delay: .8s;
 }
 
+/* круг из линий */
 .promo_bg .promo_bg_ctn:nth-child(4) {
     position: absolute;
     width: auto;
@@ -221,9 +248,10 @@ header a {
     z-index: 4;
     animation-name: AuxRotateIn;
     animation-duration: 2s;
-    animation-timing-function: cubic-bezier(.165,.84,.44,1);
+    animation-timing-function: cubic-bezier(.165, .84, .44, 1);
 }
 
+/* фиолетовая линия */
 .promo_bg .promo_bg_ctn:nth-child(5) {
     position: absolute;
     top: 187px;
@@ -234,9 +262,10 @@ header a {
     z-index: 3;
     animation-name: AuxFadeInPreloaded;
     animation-duration: 2.5s;
-    animation-timing-function: cubic-bezier(.77,0,.175,1);
+    animation-timing-function: cubic-bezier(.77, 0, .175, 1);
 }
 
+/* фиолетовый круг */
 .promo_bg .promo_bg_ctn:nth-child(6) {
     position: absolute;
     width: auto;
@@ -248,10 +277,11 @@ header a {
     animation-duration: 2s;
     animation-delay: .5s;
     animation-fill-mode: both;
-    animation-timing-function: cubic-bezier(.77,0,.175,1);
+    animation-timing-function: cubic-bezier(.77, 0, .175, 1);
 }
 
-.animation_book_fly{
+/* анимация парящей книги */
+.animation_book_fly {
     animation-name: FlyBook;
     animation-duration: 4s;
     animation-delay: 2s;
@@ -260,34 +290,37 @@ header a {
 }
 
 @keyframes AuxFadeInDown2 {
-    from{
+    from {
         opacity: 0;
         transform: translate3d(0, -75px, 0);
     }
-    to{
+
+    to {
         opacity: 1;
         transform: none;
     }
 }
 
 @keyframes AuxScaleUp2 {
-    from{
-        transform: scale(.6,.6);
+    from {
+        transform: scale(.6, .6);
         opacity: 0;
     }
-    to{
+
+    to {
         transform: none;
         opacity: 1;
     }
 }
 
 @keyframes AuxRotateIn {
-    from{
+    from {
         transform-origin: center;
         transform: rotate3d(0, 0, 1, -200deg);
         opacity: 0;
     }
-    to{
+
+    to {
         transform-origin: center;
         transform: none;
         opacity: 1;
@@ -295,34 +328,195 @@ header a {
 }
 
 @keyframes TransformTop {
-    from{
+    from {
         opacity: 0;
         transform: translateY(-50px);
     }
-    to{
+
+    to {
         opacity: 1;
         transform: translateY(0);
     }
 }
 
 @keyframes AuxFadeInPreloaded {
-    from{
+    from {
         opacity: 0;
     }
-    to{
+
+    to {
         opacity: 1;
     }
 }
 
 @keyframes FlyBook {
-    from{
+    from {
         transform: translateY(0);
     }
-    50%{
+
+    50% {
         transform: translateY(-25px);
     }
-    to{
+
+    to {
         transform: translateY(0);
     }
 }
 
+/* блок с категориями книг на главной странице */
+
+.categories {
+    margin-top: 50px;
+}
+
+.main_title,
+.desc_aft_title {
+    text-align: center;
+}
+
+.main_title {
+    position: relative;
+    font-size: 35px;
+    font-weight: 700;
+    padding-top: 25px;
+}
+
+.main_title::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 55px;
+    height: 3px;
+    background: #5617D2;
+}
+
+.desc_aft_title {
+    color: rgba(21, 37, 66, 0.6);
+    margin-top: 13px;
+}
+
+.category_item h3 {
+    font-size: 25px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.categories_list {
+    margin: 50px 0;
+    display: grid;
+    grid-template-columns: repeat(14, 1fr);
+    grid-template-rows: 255px 25px 244px;
+    grid-template-areas: 'psychology psychology psychology teennagers teennagers teennagers novel novel novel novel novel literature literature literature'
+        'biography biography biography biography biography biography novel novel novel novel novel literature literature literature'
+        'biography biography biography biography biography biography novel novel novel novel novel fantastic fantastic fantastic';
+    gap: 20px;
+}
+
+.categories_list .category_item {
+    border-radius: 20px;
+}
+
+.categories_list .category_item:first-of-type h3,
+.categories_list .category_item:nth-child(6) h3 {
+    color: #152542;
+}
+
+.categories_list .category_item:first-of-type {
+    grid-area: psychology;
+    background: #BBCFF4;
+}
+
+.categories_list .category_item:nth-child(2) {
+    grid-area: teennagers;
+    background: #F24E4C;
+}
+
+.categories_list .category_item:nth-child(3) {
+    grid-area: novel;
+    text-align: center;
+    background: #38C08B;
+}
+
+.categories_list .category_item:nth-child(4) {
+    grid-area: literature;
+    background: #1F61DC;
+}
+
+.categories_list .category_item:nth-child(5) {
+    grid-area: biography;
+    background: #152542;
+}
+
+.categories_list .category_item:nth-child(6) {
+    grid-area: fantastic;
+    background: #FFA700;
+}
+
+.categories_list .category_item:first-of-type .category_item_ctn,
+.categories_list .category_item:nth-child(2) .category_item_ctn,
+.categories_list .category_item:nth-child(4) .category_item_ctn,
+.categories_list .category_item:nth-child(6) .category_item_ctn {
+    padding-top: 26px;
+    padding-left: 33px;
+}
+
+.categories_list .category_item:nth-child(3) .category_item_ctn {
+    padding-top: 42px;
+    padding-left: 23px;
+    padding-right: 23px;
+}
+
+.categories_list .category_item:nth-child(5) .category_item_ctn {
+    padding-top: 38px;
+    padding-right: 70px;
+}
+
+.categories_list .category_item:nth-child(5) .category_item_ctn h3 {
+    white-space: pre-line;
+    margin-left: auto;
+    width: fit-content;
+}
+
+.category_item a {
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.categories_list .category_item .category_item_bg {
+    background-image: url('../media/image/categories/1.png');
+    background-repeat: no-repeat;
+    height: 100%;
+    background-position: bottom;
+}
+
+.categories_list .category_item:nth-child(1) .category_item_bg{
+    background-position-y: 103px;
+}
+
+.categories_list .category_item:nth-child(2) .category_item_bg {
+    background-image: url('../media/image/categories/2.png');
+    background-position-y: 66px;
+}
+
+.categories_list .category_item:nth-child(3) .category_item_bg {
+    background-image: url('../media/image/categories/3.png');
+    background-position-y: 245px;
+}
+
+.categories_list .category_item:nth-child(4) .category_item_bg {
+    background-image: url('../media/image/categories/4.png');
+    background-position-y: 107px;
+    background-position-x: right;
+}
+
+.categories_list .category_item:nth-child(5) .category_item_bg{
+    background-image: url('../media/image/categories/5.png');
+    background-position-y: 80px;
+}
+
+.categories_list .category_item:nth-child(6) .category_item_bg{
+    background-image: url('../media/image/categories/6.png');
+    background-position-y: 27px;
+}
