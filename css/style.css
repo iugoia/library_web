@@ -183,8 +183,37 @@ header a {
     margin-top: 15px;
 }
 
-.promo_col_info_ctn {
+.promo_col_info{
+    overflow: hidden;
+}
+
+.promo_col_info_ctn{
     padding-left: 110px;
+}
+
+.badge{
+    animation-name: TransformTop;
+    animation-duration: .8s;
+    animation-fill-mode: both;
+    animation-delay: 1.3s;
+    animation-timing-function: cubic-bezier(.165,.84,.44,1);
+}
+
+.promo_animation_ctn {
+    animation-name: TransformBottom;
+    animation-duration: 2.5s;
+    animation-delay: .1s;
+    animation-fill-mode: both;
+    animation-timing-function: cubic-bezier(.77,0,.175,1);
+}
+
+@keyframes TransformBottom {
+    from{
+        transform: translateY(100%);
+    }
+    to{
+        transform: translateY(0);
+    }
 }
 
 .promo_bg {
@@ -491,7 +520,7 @@ header a {
     background-position: bottom;
 }
 
-.categories_list .category_item:nth-child(1) .category_item_bg{
+.categories_list .category_item:nth-child(1) .category_item_bg {
     background-position-y: 103px;
 }
 
@@ -511,12 +540,113 @@ header a {
     background-position-x: right;
 }
 
-.categories_list .category_item:nth-child(5) .category_item_bg{
+.categories_list .category_item:nth-child(5) .category_item_bg {
     background-image: url('../media/image/categories/5.png');
     background-position-y: 80px;
 }
 
-.categories_list .category_item:nth-child(6) .category_item_bg{
+.categories_list .category_item:nth-child(6) .category_item_bg {
     background-image: url('../media/image/categories/6.png');
     background-position-y: 27px;
+}
+
+/* блок "выбирайте нас" на главной странице */
+
+.choose_list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 530px 460px;
+    grid-template-areas: 'first second'
+    'third third';
+    gap: 20px;
+    margin-top: 70px;
+}
+
+.choose{
+    margin-top: 20px;
+    margin-bottom: 80px;
+}
+
+.choose_item{
+    background: #fff;
+    border-radius: 20px;
+}
+
+.choose_list .choose_item:first-of-type {
+    grid-area: first;
+}
+
+.choose_list .choose_item:nth-child(2) {
+    grid-area: second;
+}
+
+.choose_list .choose_item:nth-child(3) {
+    grid-area: third;
+}
+
+.choose_item_ctn{
+    margin: 50px;
+    height: calc(100% - 100px);
+}
+
+.choose_item h3{
+    position: relative;
+    padding-bottom: 21px;
+    width: fit-content;
+    margin-bottom: 50px;
+}
+
+.choose_item h3::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: #BBCFF4;
+}
+
+.choose_item_row{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.choose_item_img{
+    flex: 0 0 37%;
+}
+
+.choose_item_info{
+    flex: 0 0 56%;
+}
+
+.choose_item_info p{
+    line-height: 35px;
+    font-weight: 500;
+}
+
+.choose_list .choose_item:last-of-type .choose_item_row > div:last-of-type{
+    order: -1;
+}
+
+.choose_item img{
+    width: 100%;
+}
+
+.choose_item_ctn{
+    background-image: url('../media/image/choose_service.png');
+    background-repeat: no-repeat;
+    background-position-x: left;
+    background-position-y: center;
+    background-size: 300px 300px;
+}
+
+.choose_list .choose_item:nth-child(2) .choose_item_ctn{
+    background-image: url('../media/image/choose_ticket.png');
+}
+
+.choose_list .choose_item:nth-child(3) .choose_item_ctn{
+    background-image: url('../media/image/choose_info.png');
+    background-size: 568px 354px;
+    background-position-x: right;
 }
