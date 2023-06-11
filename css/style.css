@@ -90,7 +90,7 @@ header .logo p {
     margin-left: 10px;
 }
 
-header .logo p .strong {
+.strong {
     font-weight: 700;
 }
 
@@ -649,4 +649,30 @@ header a {
     background-image: url('../media/image/choose_info.png');
     background-size: 568px 354px;
     background-position-x: right;
+}
+
+/* блок с картой */
+
+.map h2{
+    font-size: 35px;
+    font-weight: 400;
+    margin-bottom: 55px;
+    position: relative;
+}
+
+.map h2::after{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: calc(30% + 170px);
+    width: calc(70% - 170px);
+    height: 1px;
+    transform: translateY(-50%);
+    background: #BBCFF4;
+}
+
+.map_ctn{
+    padding: 55px;
+    background: #fff;
+    border-radius: 20px;
 }
