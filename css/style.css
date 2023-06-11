@@ -676,3 +676,27 @@ header a {
     background: #fff;
     border-radius: 20px;
 }
+
+/* футер */
+
+footer{
+    background: #152542;
+    padding: 11px 0;
+    margin-top: 80px;
+}
+
+.footer_row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    font-weight: 500;
+}
+
+.social_medias_list{
+    display: flex;
+}
+
+.social_medias_list .social_item:first-of-type {
+    margin-right: 18px;
+}
