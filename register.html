@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/fadeBlock.css">
     <link rel="stylesheet" href="css/style.css">
-    <title>Document</title>
+    <title>Регистрация</title>
 </head>
 
 <body>
@@ -49,7 +49,36 @@
         </header>
 
         <main>
-            
+            <div class="background-dots background-dots_first"></div>
+
+
+            <div class="authorization container">
+                <div class="authorization_form">
+                    <form class="authorization_form_content" action="" method="">
+                        <h2 class="authorization_caption">Регестрация</h2>
+                        <fieldset class="authorization_field">
+                            <input class="input" type="text" placeholder="Имя" name="login" id="login" maxlength="255" required>
+                            <input class="input" type="text" placeholder="Фамилия" name="login" id="login" maxlength="255" required>
+                        </fieldset>
+                        <fieldset class="authorization_field">
+                            <input class="input" type="text" placeholder="Логин" name="login" id="login" maxlength="255" required>
+                            <input class="input" type="email" placeholder="E-mail" name="login" id="login" maxlength="255" required>
+                        </fieldset>
+                        <input class="input" type="text" placeholder="Номер телефона" name="login" id="login" maxlength="255" required>
+                        <input class="input" type="password" placeholder="Пароль" name="pass" id="pass" maxlength="255" required>
+                        <input class="input" type="password" placeholder="Подтвердите пароль" name="pass" id="pass" maxlength="255" required>
+                        <div class="input__wrapper">
+                            <label class="field__file-wrapper" for="input__file">
+                                <div class="field__file-button">Выберите файл</div>
+                                <div class="field__file-fake">Файл не выбран</div>
+                            </label>
+                            <input type="file" name="file" id="input__file" class="input__file">
+                          </div>
+                        <input class="primary_btn login_btn" type="submit" value="Зарегистрироваться">
+                        <a class="additional_btn" href="#">Есть аккаунт?</a>
+                    </form>
+                </div>
+            </div>
         </main>
 
         <footer>
