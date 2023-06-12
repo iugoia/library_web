@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/fadeBlock.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <header class="element_pad main_header">
+            <div class="container">
+                <div class="header__row">
+                    <div class="logo">
+                        <img src="media/image/logo.png" alt="logo">
+                        <p><span class="strong">НЧПК</span> Библиотека</p>
+                    </div>
+                    <nav class="user__navigation">
+                        <ul class="user__nav__list">
+                            <li class="user__nav__item">
+                                <a href="index.html" class="user__nav__link">Главная</a>
+                            </li>
+                            <li class="user__nav__item">
+                                <a href="catalog.html" class="user__nav__link">Каталог</a>
+                            </li>
+                            <li class="user__nav__item">
+                                <a href="index.html" class="user__nav__link">Контакты</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <ul class="lk__nav">
+                        <li class="lk__nav__item">
+                            <a href="#" class="icon_btn">
+                                Зарегистрироваться
+                                <i class="fa fa-regular fa-user"></i>
+                            </a>
+                        </li>
+                        <li class="lk__nav__item">
+                            <a href="#">Войти</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <section class="catalog element_pad">
+                <div class="container">
+                    <header class="catalog_heading">
+                        <div class="catalog_heading_row">
+                            <div class="heading_col heading_col_nav">
+                                <h1>Книги</h1>
+                                <ul class="nav_heading">
+                                    <li class="nav_heading_item">
+                                        <a href="index.html">Главная</a>
+                                    </li>
+                                    <li class="nav_heading_item">
+                                        <a href="catalog.html">Каталог</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="heading_col heading_col_info">
+                                <h2>Показано 1-16 из 18 результатов</h2>
+                                <div class="catalog_sort">
+                                    <p class="sort_row sort_icon" id="sortRow">
+                                        <img src="media/image/icons/sortRow.png" alt="" width="30" height="13">
+                                    </p>
+                                    <p class="sort_list sort_icon active" id="sortList">
+                                        <img src="media/image/icons/sortList.png" alt="">
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </header>
+
+                    <div class="catalog_row">
+                        <div class="filter_search catalog_col">
+                            <h2 class="title_custom">Поиск</h2>
+                            <input type="text" class="form_control" placeholder="Название..">
+                            <h2 class="title_custom">Жанр</h2>
+                            <form action="#" class="catalog_form">
+                                <fieldset class="catalog_checkbox_field">
+                                    <input type="checkbox" class="checkbox_control" id="detective">
+                                    <label for="detective" class="checkbox_label">Детективы</label>
+                                    <p class="checkbox_result">(6)</p>
+                                </fieldset>
+                                <fieldset class="catalog_checkbox_field">
+                                    <input type="checkbox" class="checkbox_control" id="novel">
+                                    <label for="novel" class="checkbox_label">Романы</label>
+                                    <p class="checkbox_result">(6)</p>
+                                </fieldset>
+                                <fieldset class="catalog_checkbox_field">
+                                    <input type="checkbox" class="checkbox_control" id="literature">
+                                    <label for="literature" class="checkbox_label">Художественная литература</label>
+                                    <p class="checkbox_result">(6)</p>
+                                </fieldset>
+                                <fieldset class="catalog_checkbox_field">
+                                    <input type="checkbox" class="checkbox_control" id="phs">
+                                    <label for="phs" class="checkbox_label">Психология</label>
+                                    <p class="checkbox_result">(6)</p>
+                                </fieldset>
+                                <button class="primary_btn">Найти</button>
+                            </form>
+                        </div>
+
+                        <div class="catalog_row catalog_index">
+                            <div class="catalog_index_ctn">
+                                <ul class="catalog_list">
+                                    <li class="catalog_item">
+                                        <div class="catalog_item_ctn">
+                                            <div class="catalog_item_row">
+                                                <div class="catalog_item_image_ctn">
+                                                    <a href="#">
+                                                        <img src="media/image/books/1.png" alt="boook">
+                                                    </a>
+                                                </div>
+                                                <div class="catalog_item_info">
+                                                    <h3>103 Home Cooked meals</h3>
+                                                    <a href="" class="author_link">Kristi Lee</a>
+                                                    <div class="book_stars_par">
+                                                        <div class="book_stars_unfill">
+                                                            <img src="media/image/unfilled_stars.png" alt="">
+                                                        </div>
+                                                        <div class="book_stars_fill" style="width: 122px">
+                                                            <img src="media/image/filled_stars.png" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <p class="book_desc">
+                                                        Укрывшись от погони в академии Лютвидж, Оз и его компания рассказывают Лейму о предательстве герцога Бальмы. Однако вскоре выясняется, что не все так просто, ведь именно Бальма отправил своего подчиненного на помощь Озу. Какую же цель преследует взбалмошный герцог?
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="catalog_item">
+                                        <div class="catalog_item_ctn">
+                                            <div class="catalog_item_row">
+                                                <div class="catalog_item_image_ctn">
+                                                    <a href="#">
+                                                        <img src="media/image/books/1.png" alt="boook">
+                                                    </a>
+                                                </div>
+                                                <div class="catalog_item_info">
+                                                    <h3>103 Home Cooked meals</h3>
+                                                    <a href="" class="author_link">Kristi Lee</a>
+                                                    <div class="book_stars_par">
+                                                        <div class="book_stars_unfill">
+                                                            <img src="media/image/unfilled_stars.png" alt="">
+                                                        </div>
+                                                        <div class="book_stars_fill" style="width: 122px">
+                                                            <img src="media/image/filled_stars.png" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <p class="book_desc">
+                                                        Укрывшись от погони в академии Лютвидж, Оз и его компания рассказывают Лейму о предательстве герцога Бальмы. Однако вскоре выясняется, что не все так просто, ведь именно Бальма отправил своего подчиненного на помощь Озу. Какую же цель преследует взбалмошный герцог?
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="catalog_item">
+                                        <div class="catalog_item_ctn">
+                                            <div class="catalog_item_row">
+                                                <div class="catalog_item_image_ctn">
+                                                    <a href="#">
+                                                        <img src="media/image/books/1.png" alt="boook">
+                                                    </a>
+                                                </div>
+                                                <div class="catalog_item_info">
+                                                    <h3>103 Home Cooked meals</h3>
+                                                    <a href="" class="author_link">Kristi Lee</a>
+                                                    <div class="book_stars_par">
+                                                        <div class="book_stars_unfill">
+                                                            <img src="media/image/unfilled_stars.png" alt="">
+                                                        </div>
+                                                        <div class="book_stars_fill" style="width: 122px">
+                                                            <img src="media/image/filled_stars.png" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <p class="book_desc">
+                                                        Укрывшись от погони в академии Лютвидж, Оз и его компания рассказывают Лейму о предательстве герцога Бальмы. Однако вскоре выясняется, что не все так просто, ведь именно Бальма отправил своего подчиненного на помощь Озу. Какую же цель преследует взбалмошный герцог?
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="catalog_item">
+                                        <div class="catalog_item_ctn">
+                                            <div class="catalog_item_row">
+                                                <div class="catalog_item_image_ctn">
+                                                    <a href="#">
+                                                        <img src="media/image/books/1.png" alt="boook">
+                                                    </a>
+                                                </div>
+                                                <div class="catalog_item_info">
+                                                    <h3>103 Home Cooked meals</h3>
+                                                    <a href="" class="author_link">Kristi Lee</a>
+                                                    <div class="book_stars_par">
+                                                        <div class="book_stars_unfill">
+                                                            <img src="media/image/unfilled_stars.png" alt="">
+                                                        </div>
+                                                        <div class="book_stars_fill" style="width: 122px">
+                                                            <img src="media/image/filled_stars.png" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <p class="book_desc">
+                                                        Укрывшись от погони в академии Лютвидж, Оз и его компания рассказывают Лейму о предательстве герцога Бальмы. Однако вскоре выясняется, что не все так просто, ведь именно Бальма отправил своего подчиненного на помощь Озу. Какую же цель преследует взбалмошный герцог?
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="catalog_item">
+                                        <div class="catalog_item_ctn">
+                                            <div class="catalog_item_row">
+                                                <div class="catalog_item_image_ctn">
+                                                    <a href="#">
+                                                        <img src="media/image/books/1.png" alt="boook">
+                                                    </a>
+                                                </div>
+                                                <div class="catalog_item_info">
+                                                    <h3>103 Home Cooked meals</h3>
+                                                    <a href="" class="author_link">Kristi Lee</a>
+                                                    <div class="book_stars_par">
+                                                        <div class="book_stars_unfill">
+                                                            <img src="media/image/unfilled_stars.png" alt="">
+                                                        </div>
+                                                        <div class="book_stars_fill" style="width: 122px">
+                                                            <img src="media/image/filled_stars.png" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <p class="book_desc">
+                                                        Укрывшись от погони в академии Лютвидж, Оз и его компания рассказывают Лейму о предательстве герцога Бальмы. Однако вскоре выясняется, что не все так просто, ведь именно Бальма отправил своего подчиненного на помощь Озу. Какую же цель преследует взбалмошный герцог?
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="catalog_item">
+                                        <div class="catalog_item_ctn">
+                                            <div class="catalog_item_row">
+                                                <div class="catalog_item_image_ctn">
+                                                    <a href="#">
+                                                        <img src="media/image/books/1.png" alt="boook">
+                                                    </a>
+                                                </div>
+                                                <div class="catalog_item_info">
+                                                    <h3>103 Home Cooked meals</h3>
+                                                    <a href="" class="author_link">Kristi Lee</a>
+                                                    <div class="book_stars_par">
+                                                        <div class="book_stars_unfill">
+                                                            <img src="media/image/unfilled_stars.png" alt="">
+                                                        </div>
+                                                        <div class="book_stars_fill" style="width: 122px">
+                                                            <img src="media/image/filled_stars.png" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <p class="book_desc">
+                                                        Укрывшись от погони в академии Лютвидж, Оз и его компания рассказывают Лейму о предательстве герцога Бальмы. Однако вскоре выясняется, что не все так просто, ведь именно Бальма отправил своего подчиненного на помощь Озу. Какую же цель преследует взбалмошный герцог?
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="catalog_item">
+                                        <div class="catalog_item_ctn">
+                                            <div class="catalog_item_row">
+                                                <div class="catalog_item_image_ctn">
+                                                    <a href="#">
+                                                        <img src="media/image/books/1.png" alt="boook">
+                                                    </a>
+                                                </div>
+                                                <div class="catalog_item_info">
+                                                    <h3>103 Home Cooked meals</h3>
+                                                    <a href="" class="author_link">Kristi Lee</a>
+                                                    <div class="book_stars_par">
+                                                        <div class="book_stars_unfill">
+                                                            <img src="media/image/unfilled_stars.png" alt="">
+                                                        </div>
+                                                        <div class="book_stars_fill" style="width: 122px">
+                                                            <img src="media/image/filled_stars.png" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <p class="book_desc">
+                                                        Укрывшись от погони в академии Лютвидж, Оз и его компания рассказывают Лейму о предательстве герцога Бальмы. Однако вскоре выясняется, что не все так просто, ведь именно Бальма отправил своего подчиненного на помощь Озу. Какую же цель преследует взбалмошный герцог?
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="container">
+                <div class="footer_row">
+                    <div class="footer_col">
+                        © 2023 Ruckuvas team
+                    </div>
+                    <div class="footer_col">
+                        <ul class="social_medias_list">
+                            <li class="social_item">
+                                <a href="#" class="social_link">
+                                    <img src="media/image/icons/vk.svg" alt="vk">
+                                </a>
+                            </li>
+                            <li class="social_item">
+                                <a href="#" class="social_link">
+                                    <img src="media/image/icons/tg.svg" alt="tg">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <!-- подключение плагина анимаций при скролле -->
+    <script src="js/fadeBlock.js"></script>
+    <!-- подлкючение набора шрифтов и иконок -->
+    <script src="https://kit.fontawesome.com/a60cb12451.js" crossorigin="anonymous"></script>
+    <script src="js/catalog.js"></script>
+</body>
+
+</html>

@@ -8,9 +8,7 @@ class Options {
 }
 
 
-const fadeOptions = new Options(2, 100, false);
-
-
+const fadeOptions = new Options(1, 100, true);
 
 let fadeIn = document.querySelectorAll('.fadeIn'),
   fadeRight = document.querySelectorAll('.fadeRight'),
