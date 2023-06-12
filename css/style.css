@@ -664,6 +664,45 @@ li {
     background-position-x: right;
 }
 
+/* каталог на главной странице */
+
+.index_catalog_heading{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+}
+
+.index_catalog_heading hr{
+    width: 50%;
+    height: 1px;
+    background: #BBCFF4;
+    border: none;
+}
+
+.index_catalog{
+    margin: 70px 0;
+}
+
+.catalog_ctn{
+    padding: 60px;
+    background: #fff;
+    border-radius: 20px;
+}
+
+.index_catalog .catalog_list{
+    gap: unset;
+}
+
+.index_catalog .catalog_item{
+    padding: 20px;
+}
+
+.index_catalog_heading h2{
+    font-size: 35px;
+    font-weight: 400;
+}
+
 /* блок с картой */
 
 .map h2 {
@@ -914,12 +953,12 @@ fieldset{
 
 .catalog_list{
     display: flex;
-    gap: 20px;
+    gap: 30px;
     flex-wrap: wrap;
 }
 
 .catalog_item{
-    flex: 0 0 23%;
+    flex: 0 0 22%;
     margin-bottom: 30px;
 }
 
