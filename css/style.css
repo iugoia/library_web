@@ -1344,7 +1344,7 @@ fieldset{
    margin-left: 10px;
 }
 .input.search{
-    width: 310px;
+    width: 350px;
     margin-bottom: 50px;
 }
 .input::placeholder{
@@ -1368,4 +1368,7 @@ td.author_description{
 }
 th.left_alignment, td.left_alignment{
     text-align: left;
+}
+th>a{
+    color: rgba(150, 144, 169, 1);
 }
