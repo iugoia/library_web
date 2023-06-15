@@ -1193,6 +1193,10 @@ fieldset{
     height: 100vh;
     text-align: right;
     transform: translateX(-190px);
+    transition: transform .5s;
+    position: fixed;
+    top: 0;
+    left: 0;
 }
 
 .left_nav span{
@@ -1222,4 +1226,93 @@ fieldset{
 .left_nav:hover span{
     font-size: 16px;
     margin-left: 15px;
+}
+
+
+
+/* верстка страницы мои бронирования */
+
+.main_block_lk{
+    margin: 0 auto;
+    margin-top: 100px;
+}
+
+.lk_inner_block{
+    padding: 30px 50px;
+    background: #fff;
+    border-radius: 20px;
+}
+
+.main_table{
+    text-align: center;
+    font-weight: 500;
+    border-collapse: collapse;
+    width: 100%;
+    box-shadow: 0px 5px 20px rgba(21, 37, 66, 0.15);
+}
+
+.main_table_heading{
+    font-weight: 700;
+    color: rgba(150, 144, 169, 1);
+    background: #F9F8FC;
+}
+
+.table_image_ctn{
+    width: 35px;
+}
+
+.table_image_ctn img{
+    width: 100%;
+}
+
+.table_image_text{
+    display: flex;
+    align-items: center;
+}
+
+.table_image_text p{
+    margin-left: 15px;
+}
+
+.main_table th, .main_table td{
+    padding: 10px 30px;
+}
+
+.text-danger{
+    color: rgba(239, 108, 107, 1);
+}
+
+.text-primary{
+    color: #0D6EFD;
+}
+
+.main_block_lk h1{
+    margin-bottom: 40px;
+    font-size: 35px;
+    text-transform: capitalize;
+}
+
+.btn_icon{
+    border: none;
+    background: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.table_actions{
+    display: flex;
+    margin: 0 auto;
+}
+
+.table_actions a{
+    display: block;
+    margin-right: 15px;
+}
+
+.main_table tr:not(.main_table_heading) {
+    border-bottom: 2px solid #F9F8FC;
+}
+
+.main_table tr:last-of-type{
+    border-bottom: none;
 }
