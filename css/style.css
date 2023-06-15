@@ -1326,6 +1326,7 @@ fieldset{
     color: inherit;
 }
 
+
 .lk_caption_row{
     display: flex;
     justify-content: space-between;
@@ -1348,3 +1349,19 @@ fieldset{
 .input::placeholder{
     color: #949494;
 }
+
+
+.table_image_ctn.author{
+    width: 50px;
+}
+
+td.author_description{
+    width: 80%;  
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+    white-space: nowrap;
+    /*-webkit-line-clamp: 2;*/
+}
+.authors_table {
+    table-layout: fixed;
+  }
