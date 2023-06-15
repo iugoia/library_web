@@ -94,10 +94,18 @@
             </div>
         </footer>
     </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <!-- подключение плагина анимаций при скролле -->
     <script src="js/fadeBlock.js"></script>
+
     <!-- подлкючение набора шрифтов и иконок -->
     <script src="https://kit.fontawesome.com/a60cb12451.js" crossorigin="anonymous"></script>
+
+    <script>
+        $(function () {
+            $("#phone").mask("+ 7 (999) 999-99-99");
+        });
+    </script>
 </body>
 
 </html>
