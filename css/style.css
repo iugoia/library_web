@@ -1316,3 +1316,7 @@ fieldset{
 .main_table tr:last-of-type{
     border-bottom: none;
 }
+
+.eye_icon{
+    color: inherit;
+}
