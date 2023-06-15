@@ -1316,6 +1316,7 @@ fieldset{
 
 .main_table tr:not(.main_table_heading) {
     border-bottom: 2px solid #F9F8FC;
+    height: 60px;
 }
 
 .main_table tr:last-of-type{
@@ -1331,7 +1332,7 @@ fieldset{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 40px;
+    margin-bottom: 60px;
 }
 .lk_caption_row h1{
     margin-bottom: 0;
@@ -1364,4 +1365,7 @@ td.author_description{
 }
 .authors_table {
     table-layout: fixed;
-  }
+}
+th.left_alignment, td.left_alignment{
+    text-align: left;
+}
