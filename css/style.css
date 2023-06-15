@@ -734,7 +734,6 @@ li {
 footer {
     background: #152542;
     padding: 11px 0;
-    margin-top: 80px;
 }
 
 .footer_row {
@@ -1042,8 +1041,7 @@ fieldset{
     height: 100vh;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content:center;
+    justify-content:space-between;
 }
 
 .background-dots{
@@ -1066,10 +1064,11 @@ fieldset{
 }
 
 .authorization_form{
-    padding-top: 100px;
+    padding-top: 40px;
     width: 690px;
     border-radius: 20px;
     background:#FFFFFF;
+    margin: 0 auto;
 }
 
 .authorization_field{
@@ -1186,4 +1185,41 @@ fieldset{
     width: 160px;
     height: 1px;
     background:#292929;
+}
+
+.left_nav{
+    background: #152542;
+    width: 295px;
+    height: 100vh;
+    text-align: right;
+    transform: translateX(-190px);
+}
+
+.left_nav span{
+    font-size: 0;
+}
+
+.left_nav a{
+    padding: 15px 40px;
+    color: #fff;
+    font-weight: 500;
+}
+
+.left_nav a:hover{
+    background: #233b68;
+}
+
+.left_nav_ctn{
+    display: flex;
+    flex-direction: column;
+}
+
+.left_nav:hover{
+    transform: translateX(0);
+    text-align: left;
+}
+
+.left_nav:hover span{
+    font-size: 16px;
+    margin-left: 15px;
 }
