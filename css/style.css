@@ -1372,3 +1372,13 @@ th.left_alignment, td.left_alignment{
 th>a{
     color: rgba(150, 144, 169, 1);
 }
+
+
+img.user_avatar{
+    border-radius: 50px;
+    width:50px;
+    height:50px;
+}
+p.name_user{
+    margin-left: 30px;
+}
