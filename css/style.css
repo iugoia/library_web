@@ -1175,6 +1175,23 @@ fieldset{
 .authorization_field .input{
     width: 180px;
 }
+.message1, .message2{
+    font-size: 14px;
+    margin: -10px 0 10px 0;
+}
+.input_wrapper{
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+}
+.input.border-succes:focus, .input.border-succes{
+    border-color: #38C08B;
+    outline: #38C08B;
+}
+.input.border-danger:focus, .input.border-danger{
+    border-color:  rgba(239, 108, 107, 1);
+    outline: rgba(239, 108, 107, 1);
+}
 
 .authorization_form_content{
     padding: 42px 118px 52px 118px;
