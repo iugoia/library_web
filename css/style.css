@@ -1382,3 +1382,70 @@ img.user_avatar{
 p.name_user{
     margin-left: 30px;
 }
+
+/* верстка страницы мои Отзывы */
+.comment_shadow{
+   
+box-shadow: 0px 5px 20px rgba(21, 37, 66, 0.15);
+margin-bottom: 3%;
+}
+.comment_button{
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+.comment_image{
+    width: 85px;
+    height: 85px;
+    display: flex;
+}
+.comment_border{
+    padding: 3%;
+}
+.comment_name{
+    padding: 0% 0% 20% 0%;
+    text-overflow: ellipsis; 
+    white-space: nowrap;
+    margin-top:20% ;
+    display: flex;
+    font-weight: 500;
+    border-collapse: collapse;
+}
+.comment_star{
+    width: 100%;
+    margin-left:20%;
+}
+
+.comment_date{
+    margin-top:57px;
+    display: block;
+    position: absolute;
+    margin-left: 229px;
+
+}
+.comment_text{
+
+    padding:2% 0% 0% 1%;
+    font-weight: 500;
+    border-collapse: collapse;
+}
+.but_eye{
+    color: inherit;
+width: 30px;
+    height: 30px;
+}
+.but_pen{
+    color: #0D6EFD;
+    width: 30px;
+    height: 30px;
+}
+.bot_destroy{
+    color: rgba(239, 108, 107, 1);
+    width: 30px;
+    height: 30px;
+}
+.btn_comment{
+    margin-left: auto;
+    margin-right: auto;
+}
