@@ -57,8 +57,14 @@
                     <form class="authorization_form_content" action="" method="">
                         <h2 class="authorization_caption">Регистрация</h2>
                         <fieldset class="authorization_field">
-                            <input class="input" type="text" placeholder="Имя" name="login">
-                            <input class="input" type="text" placeholder="Фамилия" name="surname">
+                            <div class="input_wrapper">
+                                <input id="input1" class="input" type="text" placeholder="Имя" name="login">
+                                <span class="message1"></span>
+                              </div>
+                              <div class="input_wrapper">
+                                <input id="input2" class="input" type="text" placeholder="Фамилия" name="surname">
+                                <span class="message2"></span>
+                              </div>
                         </fieldset>
                         <input class="input" type="text" placeholder="Логин" name="login">
                         <input class="input" type="password" placeholder="Пароль" name="password">
@@ -101,6 +107,7 @@
     <script src="js/jquery.mask.js"></script>
     <!-- подлкючение набора шрифтов и иконок -->
     <script src="https://kit.fontawesome.com/a60cb12451.js" crossorigin="anonymous"></script>
+    <script src="js/validation.js"></script>
 
     <script>
         $(function () {
