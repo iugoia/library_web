@@ -54,3 +54,19 @@ input2.addEventListener('input', function() {
         input2ValidationCount = validateInput(input2, input2Status, input2ValidationCount);
     }
 });
+
+// проверка на правильность повтора пароля
+
+const passwordPar = document.getElementById('password')
+const passwordRetryPar = document.getElementById('password_retry')
+
+const passwordIn = passwordPar.querySelector('input')
+const passwordRetryIn = passwordRetryPar.querySelector('input')
+
+passwordRetryIn.addEventListener('input', (e) => {
+    if (passwordRetryIn.value != passwordIn.value){
+        passwordRetryPar.querySelector('span').innerHTML = 'Пароли не совпадают'
+    } else {
+        passwordRetryPar.querySelector('span').innerHTML = ''
+    }
+})

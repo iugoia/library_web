@@ -60,15 +60,21 @@
                             <div class="input_wrapper">
                                 <input id="input1" class="input" type="text" placeholder="Имя" name="login">
                                 <span class="message1"></span>
-                              </div>
-                              <div class="input_wrapper">
+                            </div>
+                            <div class="input_wrapper">
                                 <input id="input2" class="input" type="text" placeholder="Фамилия" name="surname">
                                 <span class="message2"></span>
-                              </div>
+                            </div>
                         </fieldset>
                         <input class="input" type="text" placeholder="Логин" name="login">
-                        <input class="input" type="password" placeholder="Пароль" name="password">
-                        <input class="input" type="password" placeholder="Повтор пароля" name="password_retry">
+                        <div class="input_wrapper" id="password">
+                            <input class="input" type="password" placeholder="Пароль" name="password">
+                            <span class="message"></span>
+                        </div>
+                        <div class="input_wrapper" id="password_retry">
+                            <input class="input" type="password" placeholder="Повтор пароля" name="password_retry">
+                            <span class="message text-danger"></span>
+                        </div>
                         <input class="primary_btn login_btn" type="submit" value="Зарегистрироваться">
                         <a class="additional_btn" href="#">Есть аккаунт?</a>
                     </form>
@@ -101,7 +107,7 @@
         </footer>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-    
+
     <!-- подключение плагина анимаций при скролле -->
     <script src="js/fadeBlock.js"></script>
     <script src="js/jquery.mask.js"></script>
