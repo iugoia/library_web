@@ -1838,7 +1838,12 @@ width: 30px;
     content: "☆";
     text-indent: 0;
 }
-.stars a:before:hover{
+
+.stars a.filled_star:before{
+    content: "★";
+}
+
+.stars a.hovered:before {
     content: "★";
 }
 
