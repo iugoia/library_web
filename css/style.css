@@ -1350,12 +1350,33 @@ fieldset{
 .main_block_lk{
     margin: 0 auto;
     margin-top: 100px;
+    width: 1400px;
 }
 
 .lk_inner_block{
     padding: 30px 50px;
     background: #fff;
-    border-radius: 20px;
+}
+
+/*фильтры*/
+.lk_filters{
+    display: flex;
+    margin-bottom: 50px;
+    gap: 40px;
+}
+.lk_filter{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+}
+.lk_filter .input{
+    width: 260px;
+    padding: 10px 20px;
+    font-size: 14px;
+}
+.input::placeholder{
+    color: #949494;
 }
 
 .main_table{
@@ -1457,13 +1478,6 @@ fieldset{
 .primary_btn svg {
    margin-left: 10px;
 }
-.input.search{
-    width: 350px;
-    margin-bottom: 50px;
-}
-.input::placeholder{
-    color: #949494;
-}
 
 
 .table_image_ctn.author{
@@ -1497,6 +1511,62 @@ p.name_user{
     margin-left: 30px;
 }
 
+
+/*новая раскладка страницы мои бронирования*/
+.reservation_grid{
+    display: grid;
+    grid-template-columns: repeat(3, 400px);
+    grid-column-gap: 38px;
+    grid-row-gap: 40px;
+}
+.reservation-grid-item{
+    box-shadow: 0px 5px 20px rgba(21, 37, 66, 0.15);
+    border-radius: 7px;
+    padding: 25px;
+}
+.reservation_header{
+    display: flex;
+    margin-bottom: 28px;
+}
+.reservation_header .table_actions{
+    margin-left: auto;
+}
+.reservation_body{
+    display: flex;
+    gap: 20px;
+}
+.reservation_body img{
+    width: 136px;
+    height: 200px;
+    border-radius: 7px;
+}
+.reservation_body_inner{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.reservation_heading{
+    color: #152542;
+}
+.reservation_label{
+    font-weight: 500;
+    font-size: 12px;
+    color: rgba(21, 37, 66, 0.6);
+    margin-bottom: 10px;
+}
+.reservation_span{
+    font-weight: 500;
+    font-size: 14px;
+    color: #152542;
+}
+.reservation_span.text-danger{
+    color: rgba(239, 108, 107, 1);
+}
+.reservation_span.text-succes{
+    color: #38C08B;
+}
+
+
 /* верстка страницы мои Отзывы */
 .comment_shadow{
 box-shadow: 0px 5px 20px rgba(21, 37, 66, 0.15);
@@ -1516,7 +1586,7 @@ margin-bottom: 3%;
 .comment_border{
     padding: 3%;
 }
-.comment_name{
+/*.comment_name{
     padding: 0% 0% 20% 0%;
     text-overflow: ellipsis; 
     white-space: nowrap;
@@ -1525,25 +1595,51 @@ margin-bottom: 3%;
     font-weight: 500;
     border-collapse: collapse;
 }
-.comment_star{
-    width: 100%;
-    margin-left:20%;
-}
-
 .comment_date{
     margin-top:57px;
     display: block;
     position: absolute;
     margin-left: 229px;
+}*/
+.comment_inner{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+.comment_info{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.comment_name{
+    font-weight: 700;
+    font-size: 16px;
+}
+.comment_phone{
+    font-size: 14px;
+    color: rgba(21, 37, 66, 0.6);
+}
+.comment_date{
+    font-weight: 600;
+    font-size: 14px;
+    color: rgba(21, 37, 66, 0.6);
+}
+.comment_star{
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 .comment_text{
-    padding:2% 0% 0% 1%;
+    margin-top: 30px;
     font-weight: 500;
-    border-collapse: collapse;
+}
+.btn_comment{
+    margin-left: auto;
+    margin-top: 30px;
 }
 .but_eye{
     color: inherit;
-width: 30px;
+    width: 30px;
     height: 30px;
 }
 .but_pen{
@@ -1556,10 +1652,7 @@ width: 30px;
     width: 30px;
     height: 30px;
 }
-.btn_comment{
-    margin-left: auto;
-    margin-right: auto;
-}
+
 
 
 /*страница книги*/
