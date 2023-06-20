@@ -1743,6 +1743,9 @@ width: 30px;
     margin-left: auto;
     margin-bottom: 85px;
 }
+.book_info_section_reviews_submit.edit_book{
+    width: 240px;
+}
 .comment_list_item{
     background: #F5F6F6;
     border-radius: 10px;
@@ -1808,7 +1811,8 @@ width: 30px;
     height: 25px;
 }
 
-.stars a {
+.stars .star {
+    visibility: hidden;
     position: relative;
     height: 1em;
     width: 1em;
@@ -1816,19 +1820,19 @@ width: 30px;
     display: inline-block;
     text-decoration: none;
 }
-.stars a::selection {
+.stars .star::selection {
     background: rgba(33,150,243,.2);
 }
-.stars a::selection {
+.stars .star::selection {
     background: #ffb7b7;
     text-shadow: none;
 }
-.stars a:before {
+.stars .star:before {
     font-size: 25px!important;
     margin-top: -4px!important;
     color: #FFA700;
 }
-.stars a:before {
+.stars .star:before {
     display: block;
     position: absolute;
     top: 0;
@@ -1840,11 +1844,11 @@ width: 30px;
     text-indent: 0;
 }
 
-.stars a.filled_star:before{
+.stars .star.filled_star::before{
     content: "★";
 }
 
-.stars a.hovered:before {
+.stars .star.hovered::before {
     content: "★";
 }
 
@@ -2025,3 +2029,62 @@ width: 30px;
 .modal_exit_button{
     cursor: pointer;
 }
+
+/* Редактирование Бронирования */
+
+.edit_reservation_form{
+    display: grid;
+    grid-template-columns: 130px 1fr 1fr;
+    gap: 50px;
+    margin-bottom: 130px;
+}
+
+.edit_reservation_column{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.edit_reservation_img{
+    width: 100%;
+    filter: drop-shadow(0px 10px 20px rgba(21, 37, 66, 0.2));
+    border-radius: 10px;
+}
+
+.edit_reservation_row{
+    display: flex;
+    flex-direction: column;
+}
+
+.edit_reservation_row .edit_reservation_label{
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.edit_reservation_row .edit_reservation_input{
+    padding: 11px 20px;
+    font-size: 14px;
+    line-height: 17px;
+    color: #152542;
+    background: none;
+    border: 1px solid #C6C6C6;
+    border-radius: 7px;
+    appearance: url(media/image/dropdown-arrow.svg);
+}
+
+
+.edit_reservation_row .edit_reservation_input:disabled{
+    padding: 11px 20px;
+    font-size: 14px;
+    line-height: 17px;
+    color: rgba(21, 37, 66, 0.6);
+    background: #F1F1F1;
+    border: 1px solid #C6C6C6;
+    border-radius: 7px;
+}
+
+/* Добавление книги */
+

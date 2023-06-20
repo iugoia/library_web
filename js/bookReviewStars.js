@@ -2,7 +2,7 @@
 
 //работа input в виде звездочек на странице книги в отзыве
 let rating = document.querySelector(".rating");
-let stars = document.querySelectorAll(".stars a");
+let stars = document.querySelectorAll(".stars .star");
 
 for(let star of stars){
     star.onclick = function(evt){
@@ -29,7 +29,7 @@ function removeAllStars(stars, type){
 }
 
 function fillStars(selected, stars, type){
-    for(let i = 0; i < selected.textContent; i++){
+    for(let i = 0; i < selected.value; i++){
         stars[i].classList.add(type);
     }
 }

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/fadeBlock.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Редактирование Бронирования</title>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <header class="element_pad main_header">
+            <div class="container">
+                <div class="header__row">
+                    <div class="logo">
+                        <img src="media/image/logo.png" alt="logo">
+                        <p><span class="strong">НЧПК</span> Библиотека</p>
+                    </div>
+                    <nav class="user__navigation">
+                        <ul class="user__nav__list">
+                            <li class="user__nav__item">
+                                <a href="index.html" class="user__nav__link">Главная</a>
+                            </li>
+                            <li class="user__nav__item">
+                                <a href="catalog.html" class="user__nav__link">Каталог</a>
+                            </li>
+                            <li class="user__nav__item">
+                                <a href="index.html" class="user__nav__link">Контакты</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <ul class="lk__nav">
+                        <li class="lk__nav__item">
+                            <a href="#" class="icon_btn">
+                                Зарегистрироваться
+                                <i class="fa fa-regular fa-user"></i>
+                            </a>
+                        </li>
+                        <li class="lk__nav__item">
+                            <a href="#">Войти</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <div class="left_nav">
+                <div class="left_nav_ctn">
+                    <a href="#">
+                        <i class="fa-solid fa-book-bookmark fa-xl"></i>
+                        <span>Мои бронирования</span>
+                    </a>
+                    <a href="#">
+                        <i class="fa-solid fa-comment fa-xl"></i>
+                        <span>Мои отзывы</span>
+                    </a>
+                    <a href="#">
+                        <i class="fa fa-book fa-xl"></i>
+                        <span>Все книги</span>
+
+                    </a>
+                    <a href="#">
+                        <i class="fa-solid fa-user-shakespeare fa-xl "></i>
+                        <span>Авторы</span>
+                    </a>
+                    <a href="#">
+                        <i class="fa-solid fa-rectangle-list fa-xl"></i>
+                        <span>Жанры</span>
+                    </a>
+                    <a href="#">
+                        <i class="fa-solid fa-comments fa-xl"></i>
+                        <span>Все отзывы</span>
+                    </a>
+                    <a href="#">
+                        <i class="fa-solid fa-users fa-xl"></i>
+                        <span>Все пользователи</span>
+                    </a>
+                    <a href="#">
+                        <i class="fa-solid fa-octagon-check fa-xl"></i>
+                        <span>Все бронирования</span>
+                    </a>
+                    <a href="#">
+                        <i class="fa-solid fa-gear fa-xl"></i>
+                        <span>Настройки</span>
+                    </a>
+
+                    <a href="#">
+                        <i class="fa-solid fa-right-from-bracket fa-xl"></i>
+                        <span>Выйти</span>
+
+                    </a>
+                </div>
+            </div>
+
+            <section class="main_block_lk element_pad">
+                <div class="container">
+                    <div class="lk_inner_block">
+                        <div class="lk_caption_row">
+                            <h1>Редактирование Бронирования</h1>
+                        </div>
+
+                        <form action="" method="post">
+                            <div class="edit_reservation_form">
+                                <img src="media/image/books/2.png" alt="" class="edit_reservation_img">
+                                <div class="edit_reservation_column">
+                                    <div class="edit_reservation_row">
+                                        <label class="edit_reservation_label" for="book_name">Название книги</label>
+                                        <input class="edit_reservation_input" disabled type="text" placeholder="Избранница весны" id="book_name">
+                                    </div>
+                                    <div class="edit_reservation_row">
+                                        <label class="edit_reservation_label" for="book_author">Автор</label>
+                                        <input class="edit_reservation_input" disabled type="text" placeholder="Джуллия Филлипс" id="book_author">  
+                                    </div>
+                                </div>
+                                <div class="edit_reservation_column">
+                                    <div class="edit_reservation_row">
+                                        <label class="edit_reservation_label" for="book_user">Пользователь</label>
+                                        <input class="edit_reservation_input" disabled type="text" placeholder="Надежда Шевченко" id="book_user">  
+                                    </div>
+                                    <div class="edit_reservation_row">
+                                        <label class="edit_reservation_label" for="book_status">Статус бронирования</label>
+                                        <select class="edit_reservation_input" id="book_status">
+                                            <option class="edit_reservation_option" value="">Забронировано</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="comment_form_rating_input_control">
+                                <input name="submit" type="submit" id="submit" class="book_info_section_reviews_submit edit_book" value="Сохранить изменения">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    <!-- подключение плагина анимаций при скролле -->
+    <script src="js/fadeBlock.js"></script>
+    <!-- подлкючение набора шрифтов и иконок -->
+    <script src="js/all.min.js"></script>
+</body>
+
+</html>
