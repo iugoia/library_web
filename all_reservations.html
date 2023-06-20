@@ -102,8 +102,31 @@
                 <div class="container">
                     <div class="lk_inner_block">
                         <h1>Все Бронирования</h1>
-                            
-                        <input type="text" class="input search" placeholder="Поиск по книге, статусу, пользователю...">
+
+                        <div class="lk_filters">
+                            <div class="lk_filter">
+                                <label for="search" class="lk_filter_label">Поиск</label>
+                                <input id="search" name="search" class="input" placeholder="По книге, статусу, пользователю...">
+                            </div>
+                            <div class="lk_filter">
+                                <label for="status" class="lk_filter_label">Статус бронирования</label>
+                                <div class="input_select">
+                                    <select name="status" id="status" class="input">
+                                        <option value="booked" selected>Забронировано</option>
+                                        <option value="issued">Выдано</option>
+                                        <option value="returned">Возвращено</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="lk_filter">
+                                <label for="start" class="lk_filter_label">Начало бронирования</label>
+                                <input type="date" id="start" name="start" class="input">
+                            </div>
+                            <div class="lk_filter">
+                                <label for="end" class="lk_filter_label">Конец бронирования</label>
+                                <input type="date" id="end" name="end" class="input">
+                            </div>
+                        </div>
                         
                         <table class="main_table">
                             <tr class="main_table_heading">
