@@ -12,6 +12,7 @@ body {
     background-color: #F5F6F6;
     font-family: "Montserrat";
     color: #3D3D3D;
+    font-weight: 500;
 }
 
 a {
@@ -1841,7 +1842,12 @@ width: 30px;
     content: "☆";
     text-indent: 0;
 }
-.stars a:before:hover{
+
+.stars a.filled_star:before{
+    content: "★";
+}
+
+.stars a.hovered:before {
     content: "★";
 }
 

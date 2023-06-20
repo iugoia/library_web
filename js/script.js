@@ -1,5 +1,7 @@
 'use strict';
 
+//Скрипт для работы слайдера на главной странице
+
 let offset = 0;
 let prev_btn = document.querySelector(".aux_prev_btn"),
     next_btn = document.querySelector(".aux_next_btn"),
@@ -34,4 +36,3 @@ next_btn.addEventListener("click", (e)=>{
         crslList[i].style.cssText += "left:" + (positions[i] + -offset) + "px";
     }
 })
-
