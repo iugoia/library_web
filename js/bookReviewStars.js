@@ -1,12 +1,13 @@
 'use strict';
 
 //работа input в виде звездочек на странице книги в отзыве
-
+let rating = document.querySelector(".rating");
 let stars = document.querySelectorAll(".stars a");
 
 for(let star of stars){
     star.onclick = function(evt){
         evt.preventDefault();
+        rating.selectedIndex = star.textContent
         removeAllStars(stars,"filled_star");
         fillStars(star, stars,"filled_star");
     }
