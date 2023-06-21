@@ -103,20 +103,31 @@
                     <div class="lk_inner_block">
                         <h1>Все Бронирования</h1>
 
-                        <div class="lk_filters">
+                        <form class="lk_filters">
                             <div class="lk_filter">
                                 <label for="search" class="lk_filter_label">Поиск</label>
                                 <input id="search" name="search" class="input" placeholder="По книге, статусу, пользователю...">
                             </div>
                             <div class="lk_filter">
-                                <label for="status" class="lk_filter_label">Статус бронирования</label>
-                                <div class="input_select">
-                                    <select name="status" id="status" class="input">
-                                        <option value="booked" selected>Забронировано</option>
-                                        <option value="issued">Выдано</option>
-                                        <option value="returned">Возвращено</option>
-                                    </select>
+                                <p class="lk_filter_label">Статус бронирования</p>
+                                <div class="__select" data-state="">
+                                    <div class="__select__title" data-default="Option 0">Забронировано</div>
+                                    <div class="__select__content">
+                                        <input id="singleSelect0" class="__select__input" type="radio" name="singleSelect" checked />
+                                        <label for="singleSelect0" class="__select__label">Забронировано</label>
+                                        <input id="singleSelect1" class="__select__input" type="radio" name="singleSelect" />
+                                        <label for="singleSelect1" class="__select__label">Выдано</label>
+                                        <input id="singleSelect2" class="__select__input" type="radio" name="singleSelect"/>
+                                        <label for="singleSelect2" class="__select__label">Возвращено</label>
+                                    </div>
                                 </div>
+                                <!--
+                                <label for="status" class="lk_filter_label">Статус бронирования</label>
+                                <select name="status" id="status" class="input input_select">
+                                    <option value="booked" selected>Забронировано</option>
+                                    <option value="issued">Выдано</option>
+                                    <option value="returned">Возвращено</option>
+                                </select>-->
                             </div>
                             <div class="lk_filter">
                                 <label for="start" class="lk_filter_label">Начало бронирования</label>
@@ -126,7 +137,7 @@
                                 <label for="end" class="lk_filter_label">Конец бронирования</label>
                                 <input type="date" id="end" name="end" class="input">
                             </div>
-                        </div>
+                        </form>
                         
                         <table class="main_table">
                             <tr class="main_table_heading">
@@ -261,6 +272,8 @@
     <script src="js/fadeBlock.js"></script>
     <!-- подлкючение набора шрифтов и иконок -->
     <script src="js/all.min.js"></script>
+    <!-- подлкючение анимации выпадающего списка -->
+    <script src="js/selectAnimation.js"></script>
 </body>
 
 </html>
