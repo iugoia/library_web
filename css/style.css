@@ -1246,8 +1246,8 @@ fieldset{
 }
    
 .field__file-fake {
-    width: 281px;
-    height: 40px;
+    width: 50%;
+    height: 39px;
     display: flex;
     align-items: center;
     padding: 0 15px;
@@ -1260,8 +1260,8 @@ fieldset{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 172px;
-    height: 40px;
+    width: 50%;
+    height: 39px;
     background: #EFEFEF;
     border: 1px solid #C6C6C6;
     border-radius: 4px 0px 0px 4px;
@@ -1839,9 +1839,7 @@ margin-bottom: 3%;
     margin-left: auto;
     margin-bottom: 85px;
 }
-.book_info_section_reviews_submit.edit_book{
-    width: 240px;
-}
+
 .comment_list_item{
     background: #F5F6F6;
     border-radius: 10px;
@@ -1907,8 +1905,7 @@ margin-bottom: 3%;
     height: 25px;
 }
 
-.stars .star {
-    visibility: hidden;
+.stars a {
     position: relative;
     height: 1em;
     width: 1em;
@@ -1916,19 +1913,19 @@ margin-bottom: 3%;
     display: inline-block;
     text-decoration: none;
 }
-.stars .star::selection {
+.stars a::selection {
     background: rgba(33,150,243,.2);
 }
-.stars .star::selection {
+.stars a::selection {
     background: #ffb7b7;
     text-shadow: none;
 }
-.stars .star:before {
+.stars a:before {
     font-size: 25px!important;
     margin-top: -4px!important;
     color: #FFA700;
 }
-.stars .star:before {
+.stars a:before {
     display: block;
     position: absolute;
     top: 0;
@@ -1940,11 +1937,11 @@ margin-bottom: 3%;
     text-indent: 0;
 }
 
-.stars .star.filled_star::before{
+.stars a.filled_star::before{
     content: "★";
 }
 
-.stars .star.hovered::before {
+.stars a.hovered::before {
     content: "★";
 }
 
@@ -2128,6 +2125,11 @@ margin-bottom: 3%;
 
 /* Редактирование Бронирования */
 
+.book_info_section_reviews_submit.edit_book{
+    width: 240px;
+    margin-right: 66px;
+}
+
 .edit_reservation_form{
     display: grid;
     grid-template-columns: 130px 1fr 1fr;
@@ -2152,7 +2154,9 @@ margin-bottom: 3%;
     flex-direction: column;
 }
 
-.edit_reservation_row .edit_reservation_label{
+.edit_reservation_row .edit_reservation_label,
+.add_form_item_label,
+.add_genre_label{
     margin-bottom: 10px;
     font-weight: 500;
     font-size: 16px;
@@ -2183,4 +2187,88 @@ margin-bottom: 3%;
 }
 
 /* Добавление книги */
+.add_book_form{
+    display:grid;
+    gap: 30px;
+    grid-template-rows: 70px 70px 1fr;
+    margin-bottom: 130px;
+}
 
+.add_form_row{
+   gap:53px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.add_form_item{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.add_form_item_input,
+.add_genre_input{
+    padding: 11px 20px;
+    border: 1px solid #C6C6C6;
+    border-radius: 7px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #152542;
+}
+
+.add_form_item_textarea{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #152542;
+    resize: none;
+    padding: 20px 20px;
+    border: 1px solid #C6C6C6;
+    border-radius: 7px;
+}
+
+.add_form_field__file-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    border-radius:30px;
+}
+   
+.add_form_field__file-fake {
+    width: 50%;
+    height: 39px;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+    border: 1px solid #C6C6C6;
+    border-radius: 0 4px 4px 0;
+    border-left: none;
+}
+   
+.add_form_field__file-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 39px;
+    background: #EFEFEF;
+    border: 1px solid #C6C6C6;
+    border-radius: 4px 0px 0px 4px;
+}
+
+.add_form_input__file {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+}
+
+/* Добавление книги */
+
+.add_genre_column{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 130px;
+}

@@ -106,38 +106,46 @@
                         </div>
 
                         <form action="" method="post">
-                            <div>
-                                <div>
-                                    <div>
-                                        <label for=""></label>
-                                        <input type="text" placeholder="Избранница весны">
+                            <div class="add_book_form">
+                                <div class="add_form_row">
+                                    <div class="add_form_item">
+                                        <label class="add_form_item_label" for="book_name">Название книги *</label>
+                                        <input class="add_form_item_input" id="book_name" type="text" placeholder="Избранница весны">
                                     </div>
-                                    <div>
-                                        <label for=""></label>
-                                        <input type="file" name="" id="">
+                                    <div class="add_form_item">
+                                        <label class="add_form_item_label" for="input__file">Фотография *</label>
+                                        <div class="input__wrapper">
+                                            <label class="add_form_field__file-wrapper" for="input__file">
+                                                <div class="add_form_field__file-button">Выберите файл</div>
+                                                <div class="add_form_field__file-fake">Файл не выбран</div>
+                                            </label>
+                                            <input type="file"id="input__file" class="input__file">
+                                        </div>
                                     </div>
                                 </div>
-                                <div>
-                                    <div>
-                                        <label for=""></label>
-                                        <select name="" id="">
+                                <div class="add_form_row">
+                                    <div class="add_form_item">
+                                        <label class="add_form_item_label" for="book_genre">Жанр *</label>
+                                        <select class="add_form_item_input" name="" id="book_genre">
                                             <option value="">Детектив</option>
                                         </select>
                                     </div>
-                                    <div>
-                                        <label for=""></label>
-                                        <select name="" id="">
+                                    <div class="add_form_item">
+                                        <label class="add_form_item_label" for="book_author">Автор *</label>
+                                        <select class="add_form_item_input" name="" id="book_author">
                                             <option value="">Джуллия Филлипс</option>
                                         </select>
                                     </div>
-                                    <div>
-                                        <label for=""></label>
-                                        <input type="text" name="" id="">
+                                    <div class="add_form_item">
+                                        <label class="add_form_item_label" for="book_inst">Количество экземпляров</label>
+                                        <input class="add_form_item_input" type="text" name="" id="book_inst">
                                     </div>
                                 </div>
-                                <div>
-                                    <label for=""></label>
-                                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                                <div class="add_form_row">
+                                    <div class="add_form_item">
+                                        <label class="add_form_item_label" for="book_description">Описание</label>
+                                        <textarea class="add_form_item_textarea" placeholder="Текст отзыва" name="" id="book_description" cols="30" rows="10"></textarea>
+                                    </div>
                                 </div>
                             </div>
                             
