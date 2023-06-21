@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/fadeBlock.css">
     <link rel="stylesheet" href="css/style.css">
-    <title>Все Книги</title>
+    <title>Все Бронирования</title>
 </head>
 
 <body>
@@ -103,7 +103,7 @@
                     <div class="lk_inner_block">
                         <h1>Все Бронирования</h1>
 
-                        <form class="lk_filters">
+                        <div class="lk_filters">
                             <div class="lk_filter">
                                 <label for="search" class="lk_filter_label">Поиск</label>
                                 <input id="search" name="search" class="input" placeholder="По книге, статусу, пользователю...">
@@ -111,14 +111,18 @@
                             <div class="lk_filter">
                                 <p class="lk_filter_label">Статус бронирования</p>
                                 <div class="__select" data-state="">
-                                    <div class="__select__title" data-default="Option 0">Забронировано</div>
+                                    <div class="__select__title" data-default="booked">Забронировано</div>
                                     <div class="__select__content">
+                                        <a href="#" class="__select__label" id="booked">Забронировано</a>
+                                        <a href="#" class="__select__label" id="issued">Выдано</a>
+                                        <a href="#" class="__select__label" id="returned">Возвращено</a>
+                                        <!--
                                         <input id="singleSelect0" class="__select__input" type="radio" name="singleSelect" checked />
                                         <label for="singleSelect0" class="__select__label">Забронировано</label>
                                         <input id="singleSelect1" class="__select__input" type="radio" name="singleSelect" />
                                         <label for="singleSelect1" class="__select__label">Выдано</label>
                                         <input id="singleSelect2" class="__select__input" type="radio" name="singleSelect"/>
-                                        <label for="singleSelect2" class="__select__label">Возвращено</label>
+                                        <label for="singleSelect2" class="__select__label">Возвращено</label>-->
                                     </div>
                                 </div>
                                 <!--
@@ -137,7 +141,7 @@
                                 <label for="end" class="lk_filter_label">Конец бронирования</label>
                                 <input type="date" id="end" name="end" class="input">
                             </div>
-                        </form>
+                        </div>
                         
                         <table class="main_table">
                             <tr class="main_table_heading">

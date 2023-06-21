@@ -103,14 +103,18 @@
                     <div class="lk_inner_block">
                         <div class="lk_caption_row">
                             <h1>Все Авторы</h1>
-                            <a href="#" class="primary_btn">
+                            <a href="add_author.html" class="primary_btn">
                                 Добавить автора
                                 <i class="fa-solid fa-plus fa-xl" style="color: #ffffff;"></i>
                             </a>
                         </div>
-
-                        <input type="text" class="input search" placeholder="Поиск по имени...">
-                        
+                        <div class="lk_filters">
+                            <div class="lk_filter">
+                                <label for="search" class="lk_filter_label">Поиск</label>
+                                <input id="search" name="search" class="input" placeholder="По имени...">
+                            </div>
+                        </div>
+                        <!--<input type="text" class="input search" placeholder="Поиск по имени...">-->
                         <table class="main_table authors_table">
                             <tr class="main_table_heading">
                                 <th>#ID</th>

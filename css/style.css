@@ -1412,9 +1412,11 @@ fieldset{
       .__select__content {
         opacity: 1;
       }
-      .__select__label + .__select__input + .__select__label {
-        height: 25px;
-        border-top-width: 1px;
+      .__select__label{
+        height: 30px;
+        border-bottom: 1px solid #C6C6C6;
+        color: #152542;
+        vertical-align: middle;
       }
     }
 }
@@ -1444,7 +1446,7 @@ fieldset{
       transform: translate(3px, -50%) rotate(-45deg);
     }
 }
-.__select__title:focus, .__select__title:active{
+.__select__title:focus{
     border: 1px solid #5617D2;
 }
   .__select__content {
@@ -1460,21 +1462,9 @@ fieldset{
     opacity: 0;
     z-index: 8;
   }
-  .__select__input {
-    display: none;
-    &:checked + label {
-      background-color: #dedede;
-    }
-  }
   .__select__label{
     padding: 7px 0 7px 16px;
   }
-
-
-
-
-
-
 
 .main_table{
     text-align: center;
