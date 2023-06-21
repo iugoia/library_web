@@ -1345,7 +1345,7 @@ fieldset{
 
 
 
-/* верстка страницы мои бронирования */
+/* верстка страницы мои бронирования и все бронирования*/
 
 .main_block_lk{
     margin: 0 auto;
@@ -1378,6 +1378,103 @@ fieldset{
 .input::placeholder{
     color: #949494;
 }
+
+/*выпадающий список
+.input_select{
+    appearance: none;
+    background: url(../media/image/icons/select_arrow.png) no-repeat right;
+    background-position-x: calc(100% - 15px);
+}
+.input_select option{
+    color: #152542; 
+}
+.input_select option:focus{
+    background: #F9F8FC;
+}
+*/
+
+
+
+.__select {
+    position: relative;
+    width: 290px;
+    height: 40px;
+    &[data-state="active"] {
+      .__select__title {
+        &::before {
+          transform: translate(-3px, -50%) rotate(-45deg);
+        }
+  
+        &::after {
+          transform: translate(3px, -50%) rotate(45deg);
+        }
+      }
+      .__select__content {
+        opacity: 1;
+      }
+      .__select__label + .__select__input + .__select__label {
+        height: 25px;
+        border-top-width: 1px;
+      }
+    }
+}
+  .__select__title {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 7px;
+    border: 1px solid #C6C6C6;
+    cursor: pointer;
+    box-sizing: border-box;
+    padding-left: 15px;
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      left: 88%;
+      display: block;
+      width: 10px;
+      height: 2px;
+      transition: all 0.3s ease-out;
+      background-color: #152542;
+      transform: translate(-3px, -50%) rotate(45deg);
+    }
+    &::after {
+      transform: translate(3px, -50%) rotate(-45deg);
+    }
+}
+.__select__title:focus, .__select__title:active{
+    border: 1px solid #5617D2;
+}
+  .__select__content {
+    position: absolute;
+    top: 45px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border: 1px solid #C6C6C6;
+    border-radius: 5px;
+    background-color: #ffffff;
+    transition: all 0.3s ease-out;
+    opacity: 0;
+    z-index: 8;
+  }
+  .__select__input {
+    display: none;
+    &:checked + label {
+      background-color: #dedede;
+    }
+  }
+  .__select__label{
+    padding: 7px 0 7px 16px;
+  }
+
+
+
+
+
+
 
 .main_table{
     text-align: center;
@@ -1654,6 +1751,20 @@ margin-bottom: 3%;
 }
 
 
+/*страница ответить на отзыв*/
+.comment_heading{
+    font-weight: 500;
+    font-size: 20px;
+    color: rgba(21, 37, 66, 0.6);
+    margin-bottom: 30px;
+}
+.comment_textarea{
+    width: 1255px;
+}
+.answer_submit{
+    margin-right: 66px;
+}
+
 
 /*страница книги*/
 
@@ -1795,6 +1906,13 @@ margin-bottom: 3%;
 
 
 /*раздел с отзывами*/
+.comment_list_item>.primary_btn{
+    margin-bottom: 30px;
+}
+.widget_inner_reviews_comments::-webkit-scrollbar { /* webkit */
+    width: 0;
+    height: 0;
+}
 .widget_inner_reviews_addComment{
     position: relative;
 }
@@ -1891,7 +2009,7 @@ margin-bottom: 3%;
     display: none;
 }
 .hide_reviews{
-    height: 250px;
+    max-height: 370px;
     overflow: hidden;
 }
 
