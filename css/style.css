@@ -1368,7 +1368,7 @@ fieldset{
     display: flex;
     flex-direction: column;
     gap: 10px;
-    
+    width: 100%;
 }
 .lk_filter .input{
     width: 260px;
@@ -1379,48 +1379,29 @@ fieldset{
     color: #949494;
 }
 
-/*выпадающий список
-.input_select{
-    appearance: none;
-    background: url(../media/image/icons/select_arrow.png) no-repeat right;
-    background-position-x: calc(100% - 15px);
-}
-.input_select option{
-    color: #152542; 
-}
-.input_select option:focus{
-    background: #F9F8FC;
-}
-*/
 
-
-
+/*выпадающие списки*/
 .__select {
     position: relative;
-    width: 290px;
-    height: 40px;
-    &[data-state="active"] {
-      .__select__title {
-        &::before {
-          transform: translate(-3px, -50%) rotate(-45deg);
-        }
-  
-        &::after {
-          transform: translate(3px, -50%) rotate(45deg);
-        }
-      }
-      .__select__content {
-        opacity: 1;
-      }
-      .__select__label{
-        height: 30px;
-        border-bottom: 1px solid #C6C6C6;
-        color: #152542;
-        vertical-align: middle;
-      }
-    }
+    width: 100%;
+    height: 42px;
 }
-  .__select__title {
+.__select[data-state="active"] .__select__title::before{
+    transform: translate(-3px, -50%) rotate(-45deg);
+}
+.__select[data-state="active"] .__select__title::after{
+    transform: translate(3px, -50%) rotate(45deg);
+}
+.__select[data-state="active"] .__select__content{
+    display: flex;
+}
+.__select[data-state="active"] .__select__label{
+    height: 30px;
+    border-bottom: 1px solid #C6C6C6;
+    color: #152542;
+    vertical-align: middle;
+}
+.__select__title {
     display: flex;
     align-items: center;
     width: 100%;
@@ -1430,26 +1411,25 @@ fieldset{
     cursor: pointer;
     box-sizing: border-box;
     padding-left: 15px;
-    &::before,
-    &::after {
-      content: "";
-      position: absolute;
-      left: 88%;
-      display: block;
-      width: 10px;
-      height: 2px;
-      transition: all 0.3s ease-out;
-      background-color: #152542;
-      transform: translate(-3px, -50%) rotate(45deg);
-    }
-    &::after {
-      transform: translate(3px, -50%) rotate(-45deg);
-    }
+    font-weight: 500;
+    font-size: 14px;
 }
-.__select__title:focus{
-    border: 1px solid #5617D2;
+.__select__title::before, 
+.__select__title::after{
+    content: "";
+    position: absolute;
+    right: 20px;
+    display: block;
+    width: 10px;
+    height: 2px;
+    transition: all 0.3s ease-out;
+    background-color: #152542;
+    transform: translate(-3px, -50%) rotate(45deg);
 }
-  .__select__content {
+.__select__title::after {
+    transform: translate(3px, -50%) rotate(-45deg);
+}
+.__select__content {
     position: absolute;
     top: 45px;
     display: flex;
@@ -1459,13 +1439,65 @@ fieldset{
     border-radius: 5px;
     background-color: #ffffff;
     transition: all 0.3s ease-out;
-    opacity: 0;
+    display: none;
     z-index: 8;
-  }
-  .__select__label{
+}
+.__select__label{
     padding: 7px 0 7px 16px;
-  }
+    font-weight: 500;
+    font-size: 14px;
+}
 
+
+/*версия с селектом
+.select {
+    display: block;
+    width: 100%;
+    position: relative;
+}
+.new-select {
+    position: relative;
+    border: 1px solid #C6C6C6;
+    border-radius: 7px;
+    padding: 10px 20px;
+    cursor: pointer;
+    user-select: none;
+}
+.new-select__list {
+    position: absolute;
+    top: 45px;
+    left: 0;
+    border: 1px solid #C6C6C6;
+    cursor: pointer;
+    width: 100%;
+    z-index: 2;
+    background: #fff;
+    user-select: none;
+    border-radius: 5px;
+}
+.new-select__list.on {
+    display: block;
+}
+.new-select__item span {
+    display: block;
+    padding: 10px 20px;
+    border-bottom: 1px solid #C6C6C6;
+}
+.new-select__item span:hover {
+    color: #5617D2;
+}
+.new-select:after {
+    content: '';
+    display: block;
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    right: 9px;
+    top: 12px;
+    background: url('../media/image/icons/select_arrow.png') no-repeat right center / cover;
+    opacity: 0.6;
+}
+*/
 .main_table{
     text-align: center;
     font-weight: 500;
@@ -2248,7 +2280,6 @@ margin-bottom: 3%;
 .edit_reservation_column{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
 }
 
 .edit_reservation_img{

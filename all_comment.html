@@ -114,22 +114,13 @@
                                         <a href="#" class="__select__label" id="average">Средний</a>
                                         <a href="#" class="__select__label" id="bad">Низкий</a>
                                         <a href="#" class="__select__label" id="awful">Плохой</a>
-                                        <!--<input id="singleSelect0" class="__select__input" type="radio" name="singleSelect" checked />
-                                        <label for="singleSelect0" class="__select__label">Высокий</label>
-                                        <input id="singleSelect1" class="__select__input" type="radio" name="singleSelect" />
-                                        <label for="singleSelect1" class="__select__label">Хороший</label>
-                                        <input id="singleSelect2" class="__select__input" type="radio" name="singleSelect"/>
-                                        <label for="singleSelect2" class="__select__label">Средний</label>
-                                        <input id="singleSelect3" class="__select__input" type="radio" name="singleSelect"/>
-                                        <label for="singleSelect3" class="__select__label">Низкий</label>
-                                        <input id="singleSelect4" class="__select__input" type="radio" name="singleSelect"/>
-                                        <label for="singleSelect4" class="__select__label">Плохой</label>-->
                                     </div>
                                 </div>
                                 <!--
-                                <label for="rate" class="lk_filter_label">Рейтинг</label>
-                                <select name="rate" id="rate" class="input">
-                                    <option value="great" selected>Высокий</option>
+                                <label class="lk_filter_label" for="rate">Рейтинг</label>
+                                <select class="select input" name="rate" id="rate">
+                                    <option disabled>Выбрать</option>
+                                    <option value="great">Высокий</option>
                                     <option value="good">Хороший</option>
                                     <option value="average">Средний</option>
                                     <option value="bad">Низкий</option>
@@ -139,43 +130,35 @@
                             <div class="lk_filter">
                                 <p class="lk_filter_label">Дата создания</p>
                                 <div class="__select" data-state="">
-                                    <div class="__select__title" data-default="new-created">Сначала новые</div>
+                                    <div class="__select__title" data-default="new_created">Сначала новые</div>
                                     <div class="__select__content">
-                                        <a href="#" class="__select__label" id="new-created">Сначала новые</a>
-                                        <a href="#" class="__select__label" id="old-created">Сначала старые</a>
-                                        <!--
-                                        <input id="singleSelect0" class="__select__input" type="radio" name="singleSelect" checked />
-                                        <label for="singleSelect0" class="__select__label">Сначала новые</label>
-                                        <input id="singleSelect1" class="__select__input" type="radio" name="singleSelect" />
-                                        <label for="singleSelect1" class="__select__label">Сначала старые</label>-->
+                                        <a href="#" class="__select__label" id="new_created">Сначала новые</a>
+                                        <a href="#" class="__select__label" id="old_created">Сначала старые</a>
                                     </div>
                                 </div>
                                 <!--
-                                <label for="create" class="lk_filter_label">Дата создания</label>
-                                <select name="create" id="create" class="input">
-                                    <option value="old-created" selected>Сначала новые</option>
-                                    <option value="new-created">Сначала старые</option>
+                                <label class="lk_filter_label" for="created_date">Дата создания</label>
+                                <select class="select input" name="created_date" id="created_date">
+                                    <option disabled>Выбрать</option>
+                                    <option value="new_created">Сначала новые</option>
+                                    <option value="old_created">Сначала старые</option>
                                 </select>-->
                             </div>
                             <div class="lk_filter">
                                 <p class="lk_filter_label">Дата обновления</p>
                                 <div class="__select" data-state="">
-                                    <div class="__select__title" data-default="new-created">Сначала новые</div>
+                                    <div class="__select__title" data-default="new_updated">Сначала новые</div>
                                     <div class="__select__content">
-                                        <a href="#" class="__select__label" id="new-created">Сначала новые</a>
-                                        <a href="#" class="__select__label" id="old-created">Сначала старые</a>
-                                        <!--
-                                        <input id="singleSelect0" class="__select__input" type="radio" name="singleSelect" checked />
-                                        <label for="singleSelect0" class="__select__label">Сначала новые</label>
-                                        <input id="singleSelect1" class="__select__input" type="radio" name="singleSelect" />
-                                        <label for="singleSelect1" class="__select__label">Сначала старые</label>-->
+                                        <a href="#" class="__select__label" id="new_updated">Сначала новые</a>
+                                        <a href="#" class="__select__label" id="old_updated">Сначала старые</a>
                                     </div>
                                 </div>
                                 <!--
-                                <label for="edit" class="lk_filter_label">Дата обновления</label>
-                                <select name="edit" id="edit" class="input">
-                                    <option value="old-edited" selected>Сначала новые</option>
-                                    <option value="new-edited">Сначала старые</option>
+                                <label class="lk_filter_label" for="updated_date">Дата обновления</label>
+                                <select class="select input" name="updated_date" id="updated_date">
+                                    <option disabled>Выбрать</option>
+                                    <option value="new_updated">Сначала новые</option>
+                                    <option value="old_updated">Сначала старые</option>
                                 </select>-->
                             </div>
                         </div>
@@ -265,7 +248,7 @@
     <script src="js/fadeBlock.js"></script>
     <!-- подлкючение набора шрифтов и иконок -->
     <script src="js/all.min.js"></script>
-    <!-- подлкючение анимации выпадающего списка -->
+    <!-- подлкючение анимации выпадающего списка-->
     <script src="js/selectAnimation.js"></script>
 </body>
 

@@ -110,7 +110,7 @@
                                 <div class="add_form_row">
                                     <div class="add_form_item">
                                         <label class="add_form_item_label" for="book_name">Название книги *</label>
-                                        <input class="add_form_item_input" id="book_name" type="text" placeholder="Избранница весны">
+                                        <input class="add_form_item_input input" id="book_name" type="text" placeholder="Избранница весны">
                                     </div>
                                     <div class="add_form_item">
                                         <label class="add_form_item_label" for="input__file">Фотография *</label>
@@ -119,32 +119,62 @@
                                                 <div class="add_form_field__file-button">Выберите файл</div>
                                                 <div class="add_form_field__file-fake">Файл не выбран</div>
                                             </label>
-                                            <input type="file"id="input__file" class="input__file">
+                                            <input type="file"id="input__file" class="input__file input">
                                         </div>
                                     </div>
                                 </div>
                                 <div class="add_form_row">
                                     <div class="add_form_item">
-                                        <label class="add_form_item_label" for="book_genre">Жанр *</label>
-                                        <select class="add_form_item_input" name="" id="book_genre">
-                                            <option value="">Детектив</option>
-                                        </select>
+                                        <p class="add_form_item_label">Жанр *</p>
+                                        <div class="__select" data-state="">
+                                            <div class="__select__title" data-default="detective">Детектив</div>
+                                            <div class="__select__content">
+                                                <a href="#" class="__select__label" id="detective">Детектив</a>
+                                                <a href="#" class="__select__label" id="comedy">Комедия</a>
+                                                <a href="#" class="__select__label" id="psychology">Психология</a>
+                                                <a href="#" class="__select__label" id="fiction">Художественная литература</a>
+                                            </div>
+                                        </div>
+                                        <!--
+                                        <label class="add_form_item_label" for="genre">Жанр *</label>
+                                        <select class="select add_form_item_input" name="genre" id="genre">
+                                            <option disabled>Выбрать</option>
+                                            <option value="detective">Детектив</option>
+                                            <option value="comedy">Комедия</option>
+                                            <option value="psychology">Психология</option>
+                                            <option value="fiction">Художественная литература</option>
+                                        </select>-->
                                     </div>
                                     <div class="add_form_item">
-                                        <label class="add_form_item_label" for="book_author">Автор *</label>
-                                        <select class="add_form_item_input" name="" id="book_author">
-                                            <option value="">Джуллия Филлипс</option>
-                                        </select>
+                                        <p class="add_form_item_label">Автор *</p>
+                                        <div class="__select" data-state="">
+                                            <div class="__select__title" data-default="phillips">Джуллия Филлипс</div>
+                                            <div class="__select__content">
+                                                <a href="#" class="__select__label" id="phillips">Джуллия Филлипс</a>
+                                                <a href="#" class="__select__label" id="tolstoy">Лев Толстой</a>
+                                                <a href="#" class="__select__label" id="sincero">Джен Синсеро</a>
+                                                <a href="#" class="__select__label" id="kristi">Агата Кристи</a>
+                                            </div>
+                                        </div>
+                                        <!--
+                                        <label class="add_form_item_label" for="author">Автор *</label>
+                                        <select class="select add_form_item_input" name="author" id="author">
+                                            <option disabled>Выбрать</option>
+                                            <option value="phillips">Джуллия Филлипс</option>
+                                            <option value="tolstoy">Лев Толстой</option>
+                                            <option value="sincero">Джен Синсеро</option>
+                                            <option value="hay">Агата Кристи</option>
+                                        </select>-->
                                     </div>
                                     <div class="add_form_item">
                                         <label class="add_form_item_label" for="book_inst">Количество экземпляров</label>
-                                        <input class="add_form_item_input" type="text" name="" id="book_inst">
+                                        <input class="add_form_item_input input" type="text" name="" id="book_inst">
                                     </div>
                                 </div>
                                 <div class="add_form_row">
                                     <div class="add_form_item">
                                         <label class="add_form_item_label" for="book_description">Описание</label>
-                                        <textarea class="add_form_item_textarea" placeholder="Текст отзыва" name="" id="book_description" cols="30" rows="10"></textarea>
+                                        <textarea class="add_form_item_textarea input" placeholder="Текст отзыва" name="" id="book_description" cols="30" rows="10"></textarea>
                                     </div>
                                 </div>
                             </div>
@@ -162,6 +192,8 @@
     <script src="js/fadeBlock.js"></script>
     <!-- подлкючение набора шрифтов и иконок -->
     <script src="js/all.min.js"></script>
+    <!-- подлкючение анимации выпадающего списка-->
+    <script src="js/selectAnimation.js"></script>
 </body>
 
 </html>
