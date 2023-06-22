@@ -2264,7 +2264,8 @@ margin-bottom: 3%;
 
 .edit_reservation_row .edit_reservation_label,
 .add_form_item_label,
-.add_genre_label{
+.add_genre_label,
+.add_author_label{
     margin-bottom: 10px;
     font-weight: 500;
     font-size: 16px;
@@ -2315,7 +2316,8 @@ margin-bottom: 3%;
 }
 
 .add_form_item_input,
-.add_genre_input{
+.add_genre_input,
+.add_author_input{
     padding: 11px 20px;
     border: 1px solid #C6C6C6;
     border-radius: 7px;
@@ -2378,5 +2380,24 @@ margin-bottom: 3%;
 .add_genre_column{
     display: flex;
     flex-direction: column;
+    margin-bottom: 130px;
+}
+
+/* Добавление Автора */
+
+.add_author_form{
+    margin-bottom: 100px;
+}
+
+.add_author_form .add_form_row{
+    margin-bottom: 30px;
+}
+
+/* Добавление пользователя */
+
+.add_user_form{
+    display: grid;
+    grid-template-rows: repeat(4,1fr);
+    gap: 30px;
     margin-bottom: 130px;
 }
