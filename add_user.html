@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/fadeBlock.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!--favicon-->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <title>Добавить Пользователя</title>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <header class="element_pad main_header">
+            <div class="container">
+                <div class="header__row">
+                    <div class="logo">
+                        <img src="media/image/logo.png" alt="logo">
+                        <p><span class="strong">НЧПК</span> Библиотека</p>
+                    </div>
+                    <nav class="user__navigation">
+                        <ul class="user__nav__list">
+                            <li class="user__nav__item">
+                                <a href="index.html" class="user__nav__link">Главная</a>
+                            </li>
+                            <li class="user__nav__item">
+                                <a href="catalog.html" class="user__nav__link">Каталог</a>
+                            </li>
+                            <li class="user__nav__item">
+                                <a href="index.html" class="user__nav__link">Контакты</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <ul class="lk__nav">
+                        <li class="lk__nav__item">
+                            <a href="#" class="icon_btn">
+                                Зарегистрироваться
+                                <i class="fa fa-regular fa-user"></i>
+                            </a>
+                        </li>
+                        <li class="lk__nav__item">
+                            <a href="#">Войти</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <div class="left_nav">
+                <div class="left_nav_ctn">
+                    <a href="#">
+                        <i class="fa-solid fa-book-bookmark fa-xl"></i>
+                        <span>Мои бронирования</span>
+                    </a>
+                    <a href="#">
+                        <i class="fa-solid fa-comment fa-xl"></i>
+                        <span>Мои отзывы</span>
+                    </a>
+                    <a href="#">
+                        <i class="fa fa-book fa-xl"></i>
+                        <span>Все книги</span>
+
+                    </a>
+                    <a href="#">
+                        <i class="fa-solid fa-user-shakespeare fa-xl "></i>
+                        <span>Авторы</span>
+                    </a>
+                    <a href="#">
+                        <i class="fa-solid fa-rectangle-list fa-xl"></i>
+                        <span>Жанры</span>
+                    </a>
+                    <a href="#">
+                        <i class="fa-solid fa-comments fa-xl"></i>
+                        <span>Все отзывы</span>
+                    </a>
+                    <a href="#">
+                        <i class="fa-solid fa-users fa-xl"></i>
+                        <span>Все пользователи</span>
+                    </a>
+                    <a href="#">
+                        <i class="fa-solid fa-octagon-check fa-xl"></i>
+                        <span>Все бронирования</span>
+                    </a>
+                    <a href="#">
+                        <i class="fa-solid fa-gear fa-xl"></i>
+                        <span>Настройки</span>
+                    </a>
+
+                    <a href="#">
+                        <i class="fa-solid fa-right-from-bracket fa-xl"></i>
+                        <span>Выйти</span>
+
+                    </a>
+                </div>
+            </div>
+
+            <section class="main_block_lk element_pad">
+                <div class="container">
+                    <div class="lk_inner_block">
+                        <div class="lk_caption_row">
+                            <h1>Добавить пользователя</h1>
+                        </div>
+
+                        <form action="" method="post">
+                            <div class="add_user_form">
+                                <div class="add_form_row">
+                                    <div class="add_form_item">
+                                        <label class="add_author_label" for="genre_name">Имя *</label>
+                                        <input class="add_author_input input" id="genre_name" type="text" placeholder="Надежда">
+                                    </div>
+                                    <div class="add_form_item">
+                                        <label class="add_author_label" for="genre_name">Фамилия *</label>
+                                        <input class="add_author_input input" id="genre_name" type="text" placeholder="Шевченко">
+                                    </div>
+                                </div>
+
+                                <div class="add_form_row">
+                                    <div class="add_form_item">
+                                        <label class="add_author_label" for="genre_name">Логин *</label>
+                                        <input class="add_author_input input" id="genre_name" type="text" placeholder="nadya1">
+                                    </div>
+                                    <div class="add_form_item">
+                                        <label class="add_author_label" for="genre_name">E-mail</label>
+                                        <input class="add_author_input input" id="genre_name" type="email" placeholder="shev23@gmail.com">
+                                    </div>
+                                </div>
+
+                                <div class="add_form_row">
+                                    <div class="add_form_item">
+                                        <label class="add_author_label" for="genre_name">Телефон</label>
+                                        <input class="add_author_input input" id="genre_name" type="tel" placeholder="+7 (xxx) - xxx - xx - 55">
+                                    </div>
+                                    <div class="add_form_item">
+                                        <p class="add_form_item_label">Выбор роли *</p>
+                                        <div class="__select" data-state="">
+                                            <div class="__select__title" data-default="user">Пользователь</div>
+                                            <div class="__select__content">
+                                                <a href="#" class="__select__label" id="user">Пользователь</a>
+                                                <a href="#" class="__select__label" id="support">Тех.поддержка</a>
+                                                <a href="#" class="__select__label" id="librarian">Библиотекарь</a>
+                                                <a href="#" class="__select__label" id="admin">Администратор</a>
+                                            </div>
+                                        </div>
+                                        <!--
+                                        <label class="add_form_item_label" for="role">Выбор роли *</label>
+                                        <select class="select input" name="role" id="role">
+                                            <option disabled>Выбрать</option>
+                                            <option value="user">Пользователь</option>
+                                            <option value="support">Тех.поддержка</option>
+                                            <option value="librarian">Библиотекарь</option>
+                                            <option value="admin">Администратор</option>
+                                        </select>-->
+                                    </div>
+                                </div>
+
+                                <div class="add_form_row">
+                                    <div class="add_form_item">
+                                        <label class="add_author_label" for="genre_name">Текущий пароль *</label>
+                                        <input class="add_author_input input" id="genre_name" type="text">
+                                    </div>
+                                    <div class="add_form_item">
+                                        <label class="add_author_label" for="genre_name">Новый пароль *</label>
+                                        <input class="add_author_input input" id="genre_name" type="text">
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="comment_form_rating_input_control">
+                                <input name="submit" type="submit" id="submit" class="book_info_section_reviews_submit edit_book" value="Сохранить изменения">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    <!-- подключение плагина анимаций при скролле -->
+    <script src="js/fadeBlock.js"></script>
+    <!-- подлкючение набора шрифтов и иконок -->
+    <script src="js/all.min.js"></script>
+    <!-- подлкючение анимации выпадающего списка-->
+    <script src="js/selectAnimation.js"></script>
+</body>
+
+</html>3

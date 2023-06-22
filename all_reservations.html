@@ -8,7 +8,15 @@
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/fadeBlock.css">
     <link rel="stylesheet" href="css/style.css">
-    <title>Все Книги</title>
+    <!--favicon-->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <title>Все Бронирования</title>
 </head>
 
 <body>
@@ -102,8 +110,40 @@
                 <div class="container">
                     <div class="lk_inner_block">
                         <h1>Все Бронирования</h1>
-                            
-                        <input type="text" class="input search" placeholder="Поиск по книге, статусу, пользователю...">
+
+                        <div class="lk_filters">
+                            <div class="lk_filter">
+                                <label for="search" class="lk_filter_label">Поиск</label>
+                                <input id="search" name="search" class="input" placeholder="По книге, статусу, пользователю...">
+                            </div>
+                            <div class="lk_filter">
+                                <p class="lk_filter_label">Статус бронирования</p>
+                                <div class="__select" data-state="">
+                                    <div class="__select__title" data-default="booked">Забронировано</div>
+                                    <div class="__select__content">
+                                        <a href="#" class="__select__label" id="booked">Забронировано</a>
+                                        <a href="#" class="__select__label" id="issued">Выдано</a>
+                                        <a href="#" class="__select__label" id="returned">Возвращено</a>
+                                    </div>
+                                </div>
+                                <!--
+                                <label class="lk_filter_label" for="reservation_status">Статус бронирования</label>
+                                <select class="select input" name="reservation_status" id="reservation_status">
+                                    <option disabled>Выбрать</option>
+                                    <option value="booked">Забронировано</option>
+                                    <option value="issued">Выдано</option>
+                                    <option value="returned">Возвращено</option>
+                                </select>-->
+                            </div>
+                            <div class="lk_filter">
+                                <label for="start" class="lk_filter_label">Начало бронирования</label>
+                                <input type="date" id="start" name="start" class="input">
+                            </div>
+                            <div class="lk_filter">
+                                <label for="end" class="lk_filter_label">Конец бронирования</label>
+                                <input type="date" id="end" name="end" class="input">
+                            </div>
+                        </div>
                         
                         <table class="main_table">
                             <tr class="main_table_heading">
@@ -238,6 +278,8 @@
     <script src="js/fadeBlock.js"></script>
     <!-- подлкючение набора шрифтов и иконок -->
     <script src="js/all.min.js"></script>
+    <!-- подлкючение анимации выпадающего списка-->
+    <script src="js/selectAnimation.js"></script>
 </body>
 
 </html>

@@ -8,7 +8,15 @@
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/fadeBlock.css">
     <link rel="stylesheet" href="css/style.css">
-
+    <!--favicon-->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <title>Редактирование Отзыва</title>
 </head>
 
 <body>
@@ -101,41 +109,37 @@
             <section class="main_block_lk element_pad">
                 <div class="container">
                     <div class="lk_inner_block">
-                        <h1>Мои отзывы</h1>
-                        <div class="comment_shadow">
-                            <div class="comment_border">
-                                <div class="comment_button">
-                                    <a href="#" class="but_eye">
-                                        <i class="fa fa-eye fa-solid"></i>
-                                    </a>
-                                    <a href="#" class="but_pen">
-                                        <i class="fa fa-pen fa-solid"></i>
-                                    </a>
-                                    <form action="#" method="post" class="but_destroy">
-                                        <button type="sumbit" class="btn_icon text-danger">
-                                            <i class="fa fa-solid fa-trash-can"></i>
-                                        </button>
-                                    </form>
-                                </div>
-                                <div class="comment_inner">
-                                    <div class="comment_image">
-                                        <img src="media/image/human.png" alt="book">
-                                    </div>
-                                    <div class="comment_info">
-                                        <p class="comment_name">Дарья Терешкова</p>
-                                        <div class="comment_star">
-                                            <img src="media/image/filled_stars.png" alt="star">
-                                            <p class="comment_date">21.11.2022</p>
-                                        </div>
-                                    </div> 
-                                </div>
-                                <p class="comment_text">Прекрасная книга. Каждая ее строчка просто завораживает. Произведение
-                                    читается на одном дыхании. Просто капец какая интересная книга, я вот даже еще раз об этом
-                                    скажу, ну прям потрясающая!! Обожаю читать, а книги в чудесном педагогическом колледже мои
-                                    любимые
-                                </p>
-                            </div>
+                        <div class="lk_caption_row">
+                            <h1>Редактирование отзыва</h1>
                         </div>
+
+                        <form action="" method="post" class="book_info_section_reviews_form">
+                            <div class="comment_form_rating">
+                                <label for="rating" class="comment_form_rating_heading">Ваша оценка</label>
+                                <p class="stars">
+                                    <span>
+                                        <a class="star" href="#">1</a>
+                                        <a class="star" href="#">2</a>
+                                        <a class="star" href="#">3</a>
+                                        <a class="star" href="#">4</a>
+                                        <a class="star" href="#">5</a>
+                                    </span>
+                                </p>
+                                <div class="rating hidden">
+                                    <input class="rating_radio" type="radio" name="rating" value="1">
+                                    <input class="rating_radio" type="radio" name="rating" value="2">
+                                    <input class="rating_radio" type="radio" name="rating" value="3">
+                                    <input class="rating_radio" type="radio" name="rating" value="4">
+                                    <input class="rating_radio" type="radio" name="rating" value="5">
+                                </div>
+                            </div>
+                            <div class="comment_form_rating_input_control">
+                                <textarea id="comment" name="comment" placeholder="Текст отзыва" cols="100" rows="10" class="input"></textarea>
+                            </div>
+                            <div class="comment_form_rating_input_control">
+                                <input name="submit" type="submit" id="submit" class="book_info_section_reviews_submit edit_book" value="Сохранить изменения">
+                            </div>
+                        </form>
                     </div>
                 </div>
             </section>
@@ -143,6 +147,8 @@
     </div>
     <!-- подключение плагина анимаций при скролле -->
     <script src="js/fadeBlock.js"></script>
+    <!-- подключение скрипта для работы звездочек в отзыве -->
+    <script src="js/bookReviewStars.js"></script>
     <!-- подлкючение набора шрифтов и иконок -->
     <script src="js/all.min.js"></script>
 </body>

@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/fadeBlock.css">
     <link rel="stylesheet" href="css/style.css">
-    <title>Все отзывы</title>
+
 </head>
 
 <body>
@@ -102,72 +102,129 @@
                 <div class="container">
                     <div class="lk_inner_block">
                         <h1>Все отзывы</h1>
-                  <div class = "comment_shadow">
-                    <div class="comment_border"> <div class="comment_button">
-                                            <a href="#" class="but_eye">
-                                                <i class="fa fa-eye fa-solid"></i>
-                                            </a>
-                                            <a href="#" class="but_pen">
-                                                <i class="fa fa-pen fa-solid"></i>
-                                            </a>
-                                            <form action="#" method="post" class="but_destroy">
-                                                <button type="sumbit" class="btn_icon text-danger">
-                                                    <i class="fa fa-solid fa-trash-can"></i>
-                                                </button>
-                                            </form>
+
+                        <div class="lk_filters">
+                            <div class="lk_filter">
+                                <p class="lk_filter_label">Рейтинг</p>
+                                <div class="__select" data-state="">
+                                    <div class="__select__title" data-default="great">Высокий</div>
+                                    <div class="__select__content">
+                                        <a href="#" class="__select__label" id="great">Высокий</a>
+                                        <a href="#" class="__select__label" id="good">Хороший</a>
+                                        <a href="#" class="__select__label" id="average">Средний</a>
+                                        <a href="#" class="__select__label" id="bad">Низкий</a>
+                                        <a href="#" class="__select__label" id="awful">Плохой</a>
+                                    </div>
+                                </div>
+                                <!--
+                                <label class="lk_filter_label" for="rate">Рейтинг</label>
+                                <select class="select input" name="rate" id="rate">
+                                    <option disabled>Выбрать</option>
+                                    <option value="great">Высокий</option>
+                                    <option value="good">Хороший</option>
+                                    <option value="average">Средний</option>
+                                    <option value="bad">Низкий</option>
+                                    <option value="awful">Плохой</option>
+                                </select>-->
+                            </div>
+                            <div class="lk_filter">
+                                <p class="lk_filter_label">Дата создания</p>
+                                <div class="__select" data-state="">
+                                    <div class="__select__title" data-default="new_created">Сначала новые</div>
+                                    <div class="__select__content">
+                                        <a href="#" class="__select__label" id="new_created">Сначала новые</a>
+                                        <a href="#" class="__select__label" id="old_created">Сначала старые</a>
+                                    </div>
+                                </div>
+                                <!--
+                                <label class="lk_filter_label" for="created_date">Дата создания</label>
+                                <select class="select input" name="created_date" id="created_date">
+                                    <option disabled>Выбрать</option>
+                                    <option value="new_created">Сначала новые</option>
+                                    <option value="old_created">Сначала старые</option>
+                                </select>-->
+                            </div>
+                            <div class="lk_filter">
+                                <p class="lk_filter_label">Дата обновления</p>
+                                <div class="__select" data-state="">
+                                    <div class="__select__title" data-default="new_updated">Сначала новые</div>
+                                    <div class="__select__content">
+                                        <a href="#" class="__select__label" id="new_updated">Сначала новые</a>
+                                        <a href="#" class="__select__label" id="old_updated">Сначала старые</a>
+                                    </div>
+                                </div>
+                                <!--
+                                <label class="lk_filter_label" for="updated_date">Дата обновления</label>
+                                <select class="select input" name="updated_date" id="updated_date">
+                                    <option disabled>Выбрать</option>
+                                    <option value="new_updated">Сначала новые</option>
+                                    <option value="old_updated">Сначала старые</option>
+                                </select>-->
+                            </div>
+                        </div>
+
+                        <div class="comment_shadow">
+                            <div class="comment_border">
+                                <div class="comment_button">
+                                    <a href="#" class="but_eye">
+                                        <i class="fa fa-eye fa-solid"></i>
+                                    </a>
+                                    <form action="#" method="post" class="but_destroy">
+                                        <button type="sumbit" class="btn_icon text-danger">
+                                            <i class="fa fa-solid fa-trash-can"></i>
+                                        </button>
+                                    </form>
+                                </div>
+                                <div class="comment_inner">
+                                    <div class="comment_image">
+                                        <img src="media/image/human.png" alt="book">
+                                    </div>
+                                    <div class="comment_info">
+                                        <p class="comment_name">Дарья Терешкова</p>
+                                        <p class="comment_phone">+7 (960)-085-00-00</p>
+                                        <div class="comment_star">
+                                            <img src="media/image/filled_stars.png" alt="star">
+                                            <p class="comment_date">21.11.2022</p>
                                         </div>
-                    <div class="comment_image">
-                                            <img src="media/image/human.png" alt="book"><div class="comment_star">
-                                         <p class="comment_name
-                                         ">Дарья Терешково</p>
-                                        
-                                                    <img src="media/image/filled_stars.png" alt="star">
-                                                
-                                         
-                                                </div> 
-                                                <p class="comment_date
-                                         ">21.11.2022</p>  
-                                        </div> 
-                            <p class="comment_text
-                                         ">Прекрасная книга. Каждая ее строчка просто завораживает. Произведение читается на одном дыхании. Просто капец какая интересная книга, я вот даже еще раз об этом скажу, ну прям потрясающая!! Обожаю читать, а книги в чудесном педагогическом колледже мои любимые</p>
-                                       
-                                   </div>
-                               </div>
-                                <div class = "comment_shadow">
-                    <div class="comment_border"> <div class="comment_button">
-                                            <a href="#" class="but_eye">
-                                                <i class="fa fa-eye fa-solid"></i>
-                                            </a>
-                                            <a href="#" class="but_pen">
-                                                <i class="fa fa-pen fa-solid"></i>
-                                            </a>
-                                            <form action="#" method="post" class="but_destroy">
-                                                <button type="sumbit" class="btn_icon text-danger">
-                                                    <i class="fa fa-solid fa-trash-can"></i>
-                                                </button>
-                                            </form>
+                                    </div> 
+                                </div>
+                                <p class="comment_text">Прекрасная книга. Каждая ее строчка просто завораживает. Произведение
+                                    читается на одном дыхании. Просто капец какая интересная книга, я вот даже еще раз об этом
+                                    скажу, ну прям потрясающая!! Обожаю читать, а книги в чудесном педагогическом колледже мои
+                                    любимые
+                                </p>
+                                <a href="answer_comment.html" class="primary_btn btn_comment">Ответить</a>
+                            </div>
+                        </div>
+                        <div class="comment_shadow">
+                            <div class="comment_border">
+                                <div class="comment_button">
+                                    <a href="#" class="but_eye">
+                                        <i class="fa fa-eye fa-solid"></i>
+                                    </a>
+                                    <form action="#" method="post" class="but_destroy">
+                                        <button type="sumbit" class="btn_icon text-danger">
+                                            <i class="fa fa-solid fa-trash-can"></i>
+                                        </button>
+                                    </form>
+                                </div>
+                                <div class="comment_inner">
+                                    <div class="comment_image">
+                                        <img src="media/image/human.png" alt="book">
+                                    </div>
+                                    <div class="comment_info">
+                                        <p class="comment_name">Дарья Терешкова</p>
+                                        <p class="comment_phone">+7 (960)-085-00-00</p>
+                                        <div class="comment_star">
+                                            <img src="media/image/filled_stars.png" alt="star">
+                                            <p class="comment_date">21.11.2022</p>
                                         </div>
-                    <div class="comment_image">
-                                            <img src="media/image/human.png" alt="book"><div class="comment_star">
-                                         <p class="comment_name
-                                         ">Дарья Терешково</p>
-                                        
-                                                    <img src="media/image/filled_stars.png" alt="star">
-                                                
-                                         
-                                                </div> 
-                                                <p class="comment_date
-                                         ">21.11.2022</p>  
-                                        </div> 
-                            <p class="comment_text
-                                         ">Прекрасная книга. Каждая ее строчка просто завораживает. Произведение читается на одном дыхании. Просто капец какая интересная книга, я вот даже еще раз об этом скажу, ну прям потрясающая!! Обожаю читать, а книги в чудесном педагогическом колледже мои любимые</p>
-                                       
-                                   </div>
-                               </div>
-                               <a href="#" class="primary_btn btn_comment">
-                                Все отзывы
-                                
-                            </a>
+<p class="comment_text">Прекрасная книга. Каждая ее строчка просто завораживает. Произведение
+                                    читается на одном дыхании. Просто капец какая интересная книга, я вот даже еще раз об этом
+                                    скажу, ну прям потрясающая!! Обожаю читать, а книги в чудесном педагогическом колледже мои
+                                    любимые
+                                </p>
+                                <a href="answer_comment.html" class="primary_btn btn_comment">Ответить</a>
                     </div>
                 </div>
             </section>
@@ -177,6 +234,8 @@
     <script src="js/fadeBlock.js"></script>
     <!-- подлкючение набора шрифтов и иконок -->
     <script src="js/all.min.js"></script>
+    <!-- подлкючение анимации выпадающего списка-->
+    <script src="js/selectAnimation.js"></script>
 </body>
 
 </html>

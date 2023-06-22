@@ -8,6 +8,14 @@
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/fadeBlock.css">
     <link rel="stylesheet" href="css/style.css">
+    <!--favicon-->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
     <title>Все Пользователи</title>
 </head>
 
@@ -108,9 +116,13 @@
                                 <i class="fa-solid fa-plus fa-xl" style="color: #ffffff;"></i>
                             </a>
                         </div>
-
-                        <input type="text" class="input search" placeholder="Поиск по имени, телефону, роли, почте...">
-                        
+                        <div class="lk_filters">
+                            <div class="lk_filter">
+                                <label for="search" class="lk_filter_label">Поиск</label>
+                                <input id="search" name="search" class="input" placeholder="По имени, телефону, роли, почте...">
+                            </div>
+                        </div>
+                        <!--<input type="text" class="input search" placeholder="Поиск по имени, телефону, роли, почте...">-->
                         <table class="main_table">
                             <tr class="main_table_heading">
                                 <th>#ID</th>

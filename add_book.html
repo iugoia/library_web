@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/fadeBlock.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!--favicon-->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <title>Добавить книгу</title>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <header class="element_pad main_header">
+            <div class="container">
+                <div class="header__row">
+                    <div class="logo">
+                        <img src="media/image/logo.png" alt="logo">
+                        <p><span class="strong">НЧПК</span> Библиотека</p>
+                    </div>
+                    <nav class="user__navigation">
+                        <ul class="user__nav__list">
+                            <li class="user__nav__item">
+                                <a href="index.html" class="user__nav__link">Главная</a>
+                            </li>
+                            <li class="user__nav__item">
+                                <a href="catalog.html" class="user__nav__link">Каталог</a>
+                            </li>
+                            <li class="user__nav__item">
+                                <a href="index.html" class="user__nav__link">Контакты</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <ul class="lk__nav">
+                        <li class="lk__nav__item">
+                            <a href="#" class="icon_btn">
+                                Зарегистрироваться
+                                <i class="fa fa-regular fa-user"></i>
+                            </a>
+                        </li>
+                        <li class="lk__nav__item">
+                            <a href="#">Войти</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <div class="left_nav">
+                <div class="left_nav_ctn">
+                    <a href="#">
+                        <i class="fa-solid fa-book-bookmark fa-xl"></i>
+                        <span>Мои бронирования</span>
+                    </a>
+                    <a href="#">
+                        <i class="fa-solid fa-comment fa-xl"></i>
+                        <span>Мои отзывы</span>
+                    </a>
+                    <a href="#">
+                        <i class="fa fa-book fa-xl"></i>
+                        <span>Все книги</span>
+
+                    </a>
+                    <a href="#">
+                        <i class="fa-solid fa-user-shakespeare fa-xl "></i>
+                        <span>Авторы</span>
+                    </a>
+                    <a href="#">
+                        <i class="fa-solid fa-rectangle-list fa-xl"></i>
+                        <span>Жанры</span>
+                    </a>
+                    <a href="#">
+                        <i class="fa-solid fa-comments fa-xl"></i>
+                        <span>Все отзывы</span>
+                    </a>
+                    <a href="#">
+                        <i class="fa-solid fa-users fa-xl"></i>
+                        <span>Все пользователи</span>
+                    </a>
+                    <a href="#">
+                        <i class="fa-solid fa-octagon-check fa-xl"></i>
+                        <span>Все бронирования</span>
+                    </a>
+                    <a href="#">
+                        <i class="fa-solid fa-gear fa-xl"></i>
+                        <span>Настройки</span>
+                    </a>
+
+                    <a href="#">
+                        <i class="fa-solid fa-right-from-bracket fa-xl"></i>
+                        <span>Выйти</span>
+
+                    </a>
+                </div>
+            </div>
+
+            <section class="main_block_lk element_pad">
+                <div class="container">
+                    <div class="lk_inner_block">
+                        <div class="lk_caption_row">
+                            <h1>Добавить книгу</h1>
+                        </div>
+
+                        <form action="" method="post">
+                            <div class="add_book_form">
+                                <div class="add_form_row">
+                                    <div class="add_form_item">
+                                        <label class="add_form_item_label" for="book_name">Название книги *</label>
+                                        <input class="add_form_item_input input" id="book_name" type="text" placeholder="Избранница весны">
+                                    </div>
+                                    <div class="add_form_item">
+                                        <label class="add_form_item_label" for="input__file">Фотография *</label>
+                                        <div class="input__wrapper">
+                                            <label class="add_form_field__file-wrapper" for="input__file">
+                                                <div class="add_form_field__file-button">Выберите файл</div>
+                                                <div class="add_form_field__file-fake">Файл не выбран</div>
+                                            </label>
+                                            <input type="file"id="input__file" class="input__file input">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="add_form_row">
+                                    <div class="add_form_item">
+                                        <p class="add_form_item_label">Жанр *</p>
+                                        <div class="__select" data-state="">
+                                            <div class="__select__title" data-default="detective">Детектив</div>
+                                            <div class="__select__content">
+                                                <a href="#" class="__select__label" id="detective">Детектив</a>
+                                                <a href="#" class="__select__label" id="comedy">Комедия</a>
+                                                <a href="#" class="__select__label" id="psychology">Психология</a>
+                                                <a href="#" class="__select__label" id="fiction">Художественная литература</a>
+                                            </div>
+                                        </div>
+                                        <!--
+                                        <label class="add_form_item_label" for="genre">Жанр *</label>
+                                        <select class="select add_form_item_input" name="genre" id="genre">
+                                            <option disabled>Выбрать</option>
+                                            <option value="detective">Детектив</option>
+                                            <option value="comedy">Комедия</option>
+                                            <option value="psychology">Психология</option>
+                                            <option value="fiction">Художественная литература</option>
+                                        </select>-->
+                                    </div>
+                                    <div class="add_form_item">
+                                        <p class="add_form_item_label">Автор *</p>
+                                        <div class="__select" data-state="">
+                                            <div class="__select__title" data-default="phillips">Джуллия Филлипс</div>
+                                            <div class="__select__content">
+                                                <a href="#" class="__select__label" id="phillips">Джуллия Филлипс</a>
+                                                <a href="#" class="__select__label" id="tolstoy">Лев Толстой</a>
+                                                <a href="#" class="__select__label" id="sincero">Джен Синсеро</a>
+                                                <a href="#" class="__select__label" id="kristi">Агата Кристи</a>
+                                            </div>
+                                        </div>
+                                        <!--
+                                        <label class="add_form_item_label" for="author">Автор *</label>
+                                        <select class="select add_form_item_input" name="author" id="author">
+                                            <option disabled>Выбрать</option>
+                                            <option value="phillips">Джуллия Филлипс</option>
+                                            <option value="tolstoy">Лев Толстой</option>
+                                            <option value="sincero">Джен Синсеро</option>
+                                            <option value="hay">Агата Кристи</option>
+                                        </select>-->
+                                    </div>
+                                    <div class="add_form_item">
+                                        <label class="add_form_item_label" for="book_inst">Количество экземпляров</label>
+                                        <input class="add_form_item_input input" type="text" name="" id="book_inst">
+                                    </div>
+                                </div>
+                                <div class="add_form_row">
+                                    <div class="add_form_item">
+                                        <label class="add_form_item_label" for="book_description">Описание</label>
+                                        <textarea class="add_form_item_textarea input" placeholder="Текст отзыва" name="" id="book_description" cols="30" rows="10"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="comment_form_rating_input_control">
+                                <input name="submit" type="submit" id="submit" class="book_info_section_reviews_submit edit_book" value="Сохранить изменения">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    <!-- подключение плагина анимаций при скролле -->
+    <script src="js/fadeBlock.js"></script>
+    <!-- подлкючение набора шрифтов и иконок -->
+    <script src="js/all.min.js"></script>
+    <!-- подлкючение анимации выпадающего списка-->
+    <script src="js/selectAnimation.js"></script>
+</body>
+
+</html>
