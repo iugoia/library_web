@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/fadeBlock.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Настройки</title>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <header class="element_pad main_header">
+            <div class="container">
+                <div class="header__row">
+                    <div class="logo">
+                        <img src="media/image/logo.png" alt="logo">
+                        <p><span class="strong">НЧПК</span> Библиотека</p>
+                    </div>
+                    <nav class="user__navigation">
+                        <ul class="user__nav__list">
+                            <li class="user__nav__item">
+                                <a href="index.html" class="user__nav__link">Главная</a>
+                            </li>
+                            <li class="user__nav__item">
+                                <a href="catalog.html" class="user__nav__link">Каталог</a>
+                            </li>
+                            <li class="user__nav__item">
+                                <a href="index.html" class="user__nav__link">Контакты</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <ul class="lk__nav">
+                        <li class="lk__nav__item">
+                            <a href="#" class="icon_btn">
+                                Зарегистрироваться
+                                <i class="fa fa-regular fa-user"></i>
+                            </a>
+                        </li>
+                        <li class="lk__nav__item">
+                            <a href="#">Войти</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <div class="left_nav">
+                <div class="left_nav_ctn">
+                    <a href="#">
+                        <i class="fa-solid fa-book-bookmark fa-xl"></i>
+                        <span>Мои бронирования</span>
+                    </a>
+                    <a href="#">
+                        <i class="fa-solid fa-comment fa-xl"></i>
+                        <span>Мои отзывы</span>
+                    </a>
+                    <a href="#">
+                        <i class="fa fa-book fa-xl"></i>
+                        <span>Все книги</span>
+
+                    </a>
+                    <a href="#">
+                        <i class="fa-solid fa-user-shakespeare fa-xl "></i>
+                        <span>Авторы</span>
+                    </a>
+                    <a href="#">
+                        <i class="fa-solid fa-rectangle-list fa-xl"></i>
+                        <span>Жанры</span>
+                    </a>
+                    <a href="#">
+                        <i class="fa-solid fa-comments fa-xl"></i>
+                        <span>Все отзывы</span>
+                    </a>
+                    <a href="#">
+                        <i class="fa-solid fa-users fa-xl"></i>
+                        <span>Все пользователи</span>
+                    </a>
+                    <a href="#">
+                        <i class="fa-solid fa-octagon-check fa-xl"></i>
+                        <span>Все бронирования</span>
+                    </a>
+                    <a href="#">
+                        <i class="fa-solid fa-gear fa-xl"></i>
+                        <span>Настройки</span>
+                    </a>
+
+                    <a href="#">
+                        <i class="fa-solid fa-right-from-bracket fa-xl"></i>
+                        <span>Выйти</span>
+
+                    </a>
+                </div>
+            </div>
+
+            <section class="main_block_lk element_pad">
+                <div class="container">
+                    <div class="lk_block_settings">
+                       
+<div class="left_block_settings">
+   <nav class="nav_setings">
+                        <ul class="">
+                           <div class="border_settings"> <li class="li_setting">
+                                <i class="fa fa-regular fa-user svg20"></i>  <a href="#" class="a_setting a_user">Личные данные</a>
+                            </li>  </div>
+                          <div class="border_security">  <li class="li_security">
+                                 <i class="fa fa-regular fa-house-user svg20"></i>
+                                <a href="security.html" class="a_setting ">Безопасность</a>
+                            </li>
+                          </div>
+                        </ul>
+                    </nav> 
+
+</div><div class="right_block">
+
+
+ <h1>Профиль</h1>
+ <img src="media/image/human.png" alt="" class="img_settings"> 
+ <a href="#" class="icon_settings">Изменить</a>
+<h2>Личные данные</h2>
+
+  
+  <fieldset class="settings_field">
+                            <div class="input_wrapper input_set">
+                                <p class="p_set">Имя</p>
+                                <input id="input1" class="input" type="text" placeholder="Имя" name="login">
+                                <span class="message1"></span>
+                            </div>
+                            <div class="input_wrapper input_set">
+                                <p class="p_set">Фамилия</p>
+                                <input id="input2" class="input" type="text" placeholder="Фамилия" name="surname">
+                                <span class="message2"></span>
+                            </div>
+                        </fieldset>
+<h2>Логин</h2>
+
+  
+  <fieldset class="settings_field">
+                            <div class="input_wrapper input_set">
+                               
+                                <input id="input1" class="input" type="text" placeholder="Текущий логин" name="login">
+                                <span class="message1"></span>
+                            </div>
+                            <div class="input_wrapper input_set">
+                                
+                                <input id="input2" class="input" type="text" placeholder="Новый логин" name="surname">
+                                <span class="message2"></span>
+                            </div>
+                        </fieldset>
+                           
+                        
+
+</div>
+                            
+<div class="right_block_set">
+    
+ <a href="#" class="right_button_set">Сохранить Изменения</a>
+</div>
+
+                       
+
+ 
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    <!-- подключение плагина анимаций при скролле -->
+    <script src="js/fadeBlock.js"></script>
+    <!-- подлкючение набора шрифтов и иконок -->
+    <script src="js/all.min.js"></script>
+    <script src="js/bookPageWidget.js"></script>
+</body>
+
+</html>
