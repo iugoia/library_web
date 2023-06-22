@@ -1035,6 +1035,7 @@ fieldset{
     padding: 60px;
     background: #fff;
     border-radius: 20px;
+    width: 100%;
 }
 
 .catalog_row {
@@ -1052,15 +1053,43 @@ fieldset{
 
 .catalog_list{
     display: flex;
-    gap: 30px;
+    gap: 4%;
     flex-wrap: wrap;
 }
 
-.catalog_item{
+/*.catalog_item{
     flex: 0 0 22%;
     margin-bottom: 30px;
+}*/
+.catalog_item{
+    margin-bottom: 30px;
+    width: 22%;
 }
 
+@media (max-width:1440px) {
+    .catalog_list{
+        gap: 4.5%;
+    }
+    .catalog_item{
+        flex: 0 0 30%;
+    }
+}
+@media (max-width:1024px) {
+    .catalog_list{
+        gap: 7%;
+    }
+    .catalog_item{
+        flex: 0 0 44%;
+    }
+}
+@media (max-width:768px) {
+    .catalog_list{
+        gap: 7%;
+    }
+    .catalog_item{
+        flex: 0 0 100%;
+    }
+}
 .catalog_item_image_ctn{
     border-radius: 15px;
     width: 100%;
