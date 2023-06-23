@@ -2718,6 +2718,7 @@ padding-top:3% ;
 
 /*медиа запросы*/
 @media (max-width:1440px) {
+    /*страница каталога*/
     .catalog_list{
         gap: 4.5%;
     }
@@ -2726,6 +2727,17 @@ padding-top:3% ;
     }
 }
 @media (max-width:1024px) {
+    /*общие стили*/
+    body{
+        font-size: 14px;
+    }
+    /*страница каталога*/
+    .primary_btn {
+        padding: 13px 35px;
+        border-radius: 5px;
+        font-size: 14px;
+        font-weight: 600;
+    }
     .catalog_list{
         gap: 7%;
     }
@@ -2734,6 +2746,7 @@ padding-top:3% ;
     }
 }
 @media (max-width:768px) {
+    /*страница каталога*/
     .catalog_list{
         gap: 7%;
     }

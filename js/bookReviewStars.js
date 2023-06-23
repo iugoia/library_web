@@ -4,7 +4,8 @@
 let rating = document.querySelectorAll(".rating_radio");
 let stars = document.querySelectorAll(".stars a");
 
-for(let star of stars){
+if(rating && stars){
+    for(let star of stars){
     star.onclick = function(evt){
         evt.preventDefault();
         for(let i = 0; i < rating.length; i++){
@@ -37,3 +38,4 @@ function fillStars(selected, stars, type){
         stars[i].classList.add(type);
     }
 }
+};

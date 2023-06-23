@@ -11,7 +11,6 @@
     <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
-    <link rel="manifest" href="favicon/site.webmanifest">
     <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
@@ -76,11 +75,11 @@
                         </fieldset>
                         <input class="input" type="text" placeholder="Логин" name="login">
                         <div class="input_wrapper" id="password">
-                            <input class="input" type="password" placeholder="Пароль" name="password">
+                            <input class="input input_register1" type="password" placeholder="Пароль" name="password">
                             <span class="message"></span>
                         </div>
                         <div class="input_wrapper" id="password_retry">
-                            <input class="input" type="password" placeholder="Повтор пароля" name="password_retry">
+                            <input class="input input_register2" type="password" placeholder="Повтор пароля" name="password_retry">
                             <span class="message text-danger"></span>
                         </div>
                         <input class="primary_btn login_btn" type="submit" value="Зарегистрироваться">
@@ -122,7 +121,7 @@
     <!-- подлкючение набора шрифтов и иконок -->
     <script src="https://kit.fontawesome.com/a60cb12451.js" crossorigin="anonymous"></script>
     <script src="js/validation.js"></script>
-
+    <script src="js/all.min.js"></script>
     <script>
         $(function () {
             $("#phone").mask("+ 7 (999) 999-99-99");
