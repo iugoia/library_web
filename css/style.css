@@ -1066,7 +1066,7 @@ fieldset{
     width: 22%;
 }
 
-@media (max-width:1440px) {
+/*@media (max-width:1440px) {
     .catalog_list{
         gap: 4.5%;
     }
@@ -1089,7 +1089,7 @@ fieldset{
     .catalog_item{
         flex: 0 0 100%;
     }
-}
+}*/
 .catalog_item_image_ctn{
     border-radius: 15px;
     width: 100%;
@@ -2709,4 +2709,38 @@ padding-top:3% ;
     grid-template-rows: repeat(4,1fr);
     gap: 30px;
     margin-bottom: 130px;
+}
+
+
+
+
+
+
+/*медиа запросы*/
+@media (max-width:1440px) {
+    .catalog_list{
+        gap: 4.5%;
+    }
+    .catalog_item{
+        flex: 0 0 30%;
+    }
+}
+@media (max-width:1024px) {
+    .catalog_list{
+        gap: 7%;
+    }
+    .catalog_item{
+        flex: 0 0 44%;
+    }
+}
+@media (max-width:768px) {
+    .catalog_list{
+        gap: 7%;
+    }
+    .catalog_item{
+        flex: 0 0 100%;
+    }
+}
+@media (max-width:480px) {
+    
 }
