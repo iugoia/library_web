@@ -1717,8 +1717,8 @@ p.name_user{
 
 /* верстка страницы мои Отзывы */
 .comment_shadow{
-box-shadow: 0px 5px 20px rgba(21, 37, 66, 0.15);
-margin-bottom: 3%;
+    box-shadow: 0px 5px 20px rgba(21, 37, 66, 0.15);
+    margin-bottom: 3%;
 }
 .comment_button{
     display: flex;
@@ -1730,6 +1730,9 @@ margin-bottom: 3%;
     width: 85px;
     height: 85px;
     display: flex;
+}
+.comment_image img{
+    border-radius: 120px;
 }
 .comment_border{
     padding: 3%;
@@ -1816,6 +1819,15 @@ margin-bottom: 3%;
     margin-right: 66px;
 }
 
+/*Все ответы на отзывы*/
+.comment_answer{
+    background: #F4F4F4;
+    width: 93%;
+    margin-left: auto;
+}
+.comment_button .comment_heading{
+    margin-right: auto;
+}
 
 /*страница книги*/
 
@@ -2160,6 +2172,7 @@ margin-bottom: 3%;
 .book_author_related_books_list_item_img img{
     filter: drop-shadow(0px 10px 40px rgba(21, 37, 66, 0.2));
     border-radius: 10px;
+    max-width: 211px;
 }
 .book_author_related_books_list_item_heading{
     font-weight: 700;
@@ -2292,10 +2305,8 @@ margin-bottom: 3%;
     cursor: pointer;
 }
 
-  /*Настройки*/
 
-
-
+ /*Настройки*/
 .lk_block_settings{
    padding: 0px 0px 100px 0px;
     background: #fff;
@@ -2306,35 +2317,33 @@ margin-bottom: 3%;
 
 }
 .left_block_settings{
-     padding: 30px 25px 43%;
-   background: #FFFFFF;
+    padding: 30px 25px 43%;
+    background: #FFFFFF;
     border-radius: 0px;
-     float: left;
-         text-decoration: none;
+    float: left;
+    text-decoration: none;
     transition: 0.15s ease-in-out;
-     box-shadow: 0px 5px 20px rgba(21, 37, 66, 0.15);
+    box-shadow: 0px 5px 20px rgba(21, 37, 66, 0.15);
 }
 .a_setting{
-     text-decoration: none;
-  color: #666;
-
+    text-decoration: none;
+    color: #666;
 }
 .li_setting{
-height: 40px;
-
-color: rgba(86, 23, 210, 0.8);
- min-height: 10em;
+    height: 40px;
+    color: rgba(86, 23, 210, 0.8);
+    min-height: 10em;
     display: table-cell;
     vertical-align: middle
 }
 .li_security{
-font-family: 'Montserrat';
-font-weight: 500;
-font-size: 16px;
-line-height: 49px;
-display: flex;
-align-items: center;
-color: rgba(21, 37, 66, 0.8);
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 49px;
+    display: flex;
+    align-items: center;
+    color: rgba(21, 37, 66, 0.8);
 }
 
 .a_user{
